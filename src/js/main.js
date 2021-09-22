@@ -1,5 +1,5 @@
 import '../css/style.css';
 
 document.querySelector('#app').innerHTML = `
-  <h1>Hello, Valdemar!</h1>
+  <h1>Hello, Vladislav!</h1>
 `;

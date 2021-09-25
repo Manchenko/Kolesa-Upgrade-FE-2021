@@ -1,13 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
-</html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+      </head>
+      <body>
+        <div class="modal">
+          <div class="album">
+            <img src="/src/assets/image 7.png" alt="Футболка 'Эволюционируй или сдохни'" style="width: 330px; height: 330px;"/>
+            <div class="preview">
+              <img src="/src/assets/🌆 Image.png" alt="Футболка 'Эволюционируй или сдохни' бежевая" style="width: 50px; height: 50px;" class="min-image">          
+              <img src="/src/assets/🌆 Image (1).png" alt="Футболка 'Эволюционируй или сдохни' синяя" style="width: 50px; height: 50px;" class="min-image active">
+              <img src="/src/assets/🌆 Image (2).png" alt="Футболка 'Эволюционируй или сдохни' серая" style="width: 50px; height: 50px;" class="min-image">
+            </div>
+          </div>
+          <div class="info">
+            <h3>Футболка "Эволюционируй или сдохни"</h3>
+            <div class="price-summary">
+              <div class="price-info">
+                <div class="price">
+                  100 баллов
+                </div>
+                <button type="button" class="btn">Заказать</button>
+              </div>
+              <div class="balance-info">
+                <div>
+                  <div class="balance-desc">
+                    Твой баланс:
+                  </div>
+                  <div class="balance">
+                    3 945 баллов
+                  </div>
+                </div>
+                <img src="/src/assets/🛍.png" alt="Иконка баланса">
+              </div>
+            </div>
+            <div class="color-types">
+              <div class="card-title">
+                Цвета:
+              </div>
+              <div class="cards">
+                <input type="checkbox" id="blue" class="card-checkbox" value="blue" checked="checked">
+                <label for="blue" class="card">
+                  <div class="blue" style="width: 23px; height:24px;" ></div>
+                  <span class="checkmark">Синий</span>
+                </label>
+                <input type="checkbox" id="beige" class="card-checkbox" value="beige">
+                <label for="beige" class="card">
+                  <div class="beige" style="width: 23px; height:24px;"></div>
+                  <span class="checkmark">Бежевый</span>
+                </label>
+                <input type="checkbox" id="gray" class="card-checkbox" value="gray">
+                <label for="gray" class="card">
+                  <div class="gray" style="width: 23px; height:24px;"></div>
+                  <span class="checkmark">Серый</span>
+                </label>
+              </div>
+            </div>
+            <div class="size-types">
+              <div class="card-title">
+                Размеры:
+              </div>
+              <div class="cards">
+                <input type="checkbox" id="sizeS" class="card-checkbox" value="blue" checked="checked">
+                <label for="sizeS" class="card size">
+                  S
+                </label>
+                <input type="checkbox" id="sizeM" class="card-checkbox" value="beige">
+                <label for="sizeM" class="card size">
+                  M
+                </label>
+                <input type="checkbox" id="sizeL" class="card-checkbox" value="gray">
+                <label for="sizeL" class="card size">
+                  L
+                </label>
+              </div>
+            </div>
+            <div class="description">
+              <h2 class="description-title">Детали:</h2>
+              <p class="description-text">Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</p>
+            </div>
+            <div class="description">  
+              <h2 class="description-title">Как выбрать размер:</h2>
+              <p class="description-text">Написать дяде Рику для уточнения.</p>
+            </div>
+          </div>
+          <img src="/src/assets/exit.svg" alt="Выход" class="exit">
+        </div>
+        <script type="module" src="/src/js/main.js"></script>
+      </body>
+    </html>    

@@ -1,8 +1,197 @@
-#app {
+body {
     font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #1c1819;
+    line-height: 24px;
+}
+
+.modal {
+    display: flex;
+    padding: 56px 56px 56px;
+    background: #fff;
+    border-radius: 16px;
+    position: relative;
+}
+
+.album {
+    width: 330px;
+}
+
+.min-image {
+    margin-right: 8px;
+    border-radius: 8px;
+}
+
+.active {
+    border: 1px solid #2a81dd;
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.info {
+    width: 573px;
+    margin-top: 8px;
+    margin-left: 24px;
+}
+
+.info > h3 {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.price-summary {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    justify-content: space-between;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.btn {
+    background: #2a81dd;
+    color: #fff;
+    border: 0;
+    box-shadow: 2px 4px rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 134px;
+    padding: 6px 0;
+    size: 14px;
+    line-height: 24px;
+}
+
+.balance-info {
+    background: #f0fafd;
+    border-radius: 16px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 196px;
+}
+
+.balance-desc {
+    font-weight: 400;
+    size: 14px;
+    color: #888b94;
+    margin-bottom: 4px;
+}
+
+.balance {
+    font-weight: 400;
+    size: 24px;
+}
+
+.balance-info img {
+    margin-left: 12px;
+}
+
+.color-types {
+    margin-top: 24px;
+}
+
+.card-title {
+    size: 14px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #d4d4da;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-right: 6px;
+    padding: 8px 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2a81dd;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.card-checkbox:checked + .card {
+    background-color: #d6ecfb;
+    color: #1c1819;
+}
+
+.card-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.blue {
+    background-color: #00458a;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.beige {
+    background-color: #efe8d8;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.gray {
+    background-color: #d4d4da;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.size-types {
+    margin-top: 24px;
+}
+
+.size {
+    padding: 8px 16px;
+}
+
+.description {
+    margin-top: 24px;
+}
+
+.description-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+
+.description-text {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.exit {
+    position: absolute;
+    right: 30.67px;
+    top: 30.67px;
 }

@@ -1,8 +1,214 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); */
+
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    font-family: Open sans, sans-serif;
 }
+
+/* modal */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__body {
+    max-width: 1039px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 56px 56px 64px 56px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.modal__images {
+    max-width: 330px;
+    width: 100%;
+}
+
+.modal__images img {
+    display: block;
+}
+
+.modal__preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.modal__preview > img {
+    border-radius: 8px;
+    margin: 0 4px 8px 4px;
+}
+
+.modal__preview > img.active {
+    border: 1px solid #2a81dd;
+}
+
+.modal__description {
+    width: 100%;
+}
+
+.modal__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.modal__sell {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.modal__score {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1c1819;
+    margin-bottom: 8px;
+}
+
+.btn-primary {
+    background: #2a81dd;
+    box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 134px;
+    height: 36px;
+}
+
+.modal__yourbalance {
+    padding: 8px 79px 8px 16px;
+    background: #f0fafd;
+    border-radius: 16px;
+    position: relative;
+}
+
+.modal__yourbalance--balance {
+    font-size: 14px;
+    line-height: 24px;
+    color: #888b94;
+    margin-bottom: 4px;
+}
+
+.modal__yourbalance--score {
+    font-size: 16px;
+    line-height: 24px;
+    color: #1c1819;
+}
+
+.modal__yourbalance--basket {
+    position: absolute;
+    top: 11px;
+    right: 16px;
+}
+
+.modal__radio--title {
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
+    margin-bottom: 8px;
+}
+
+.modal__radio--btns {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.modal__radio {
+    display: none;
+}
+
+.modal__color--lable {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8px 8px 8px 8px;
+    border: 1px #e8e8e8 solid;
+    border-radius: 8px;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    color: #2a81dd;
+    cursor: pointer;
+}
+
+.modal__color--lable > span {
+    user-select: none;
+}
+
+.modal__color--container {
+    width: 23px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.modal__radio:checked + .modal__color--lable {
+    background-color: #d6ecfb;
+    border: 1px #d6ecfb solid;
+    color: #1c1819;
+}
+
+.modal__size--lable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+    border: 1px #e8e8e8 solid;
+    border-radius: 8px;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    color: #2a81dd;
+    cursor: pointer;
+}
+
+.modal__radio:checked + .modal__size--lable {
+    background-color: #d6ecfb;
+    border: 1px #d6ecfb solid;
+    color: #1c1819;
+}
+
+.modal__info--title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
+    margin-bottom: 4px;
+}
+
+.modal__info--text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
+}
+
+.modal__info--text:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: transparent;
+}
+
+/* /modal */

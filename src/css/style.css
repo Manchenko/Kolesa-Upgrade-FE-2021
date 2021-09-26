@@ -95,6 +95,7 @@ h3 {
 .item__info {
     margin: 8px 0 0 24px;
     font-size: 14px;
+    line-height: 24px;
 }
 
 .item__title,
@@ -111,7 +112,6 @@ h3 {
     position: relative;
     margin-right: 8px;
     margin-bottom: 8px;
-    line-height: 24px;
     cursor: pointer;
 }
 

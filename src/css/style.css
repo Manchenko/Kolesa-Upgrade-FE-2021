@@ -6,3 +6,231 @@
     color: #2c3e50;
     margin-top: 60px;
 }
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    background: #fff;
+    border-radius: 16px;
+    width: 1039px;
+    height: 588px;
+    position: relative;
+    display: flex;
+}
+
+.popup__contentImg {
+    flex-direction: column;
+    padding: 56px 24px 202px 56px;
+}
+
+.popup_mainContent {
+    flex-direction: column;
+    padding: 64px 56px 64px 24px;
+    position: relative;
+}
+
+.popup__title {
+    position: static;
+    width: 392px;
+    height: 32px;
+    left: 0;
+    top: 0;
+    font-family:
+        'Open Sans',
+        sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.popup__balance {
+    position: absolute;
+    right: 56px;
+    top: 112px;
+    width: 196px;
+    height: 68px;
+    background-color: #f0fafd;
+    border-radius: 16px;
+    background-image: url(/src/assets/🛍.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 140px;
+}
+
+.your__balance {
+    font-family:
+        'Open Sans',
+        sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #888b94;
+    padding: 8px 68px 0 16px;
+}
+
+.balance {
+    font-family:
+        'Open Sans',
+        sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 79px 8px 16px;
+}
+
+.popup__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.popup__price {
+    font-family:
+        'Open Sans',
+        sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    position: static;
+    height: 32px;
+    left: 0;
+    top: 40px;
+}
+
+.btn {
+    background: #2a81dd;
+    border-radius: 8px;
+    border: 1px;
+    color: white;
+    padding: 6px;
+    width: 134px;
+    height: 36px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.btn:hover {
+    background-color: rgb(104, 143, 253);
+    color: rgb(255, 255, 255);
+}
+
+.popup__colors {
+    margin-top: 24px;
+    font-family:
+        'Open Sans',
+        sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.rdbtn {
+    margin-top: 8px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.rdbtn input[type='radio'] {
+    display: none;
+}
+
+.rdbtn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 15px;
+    line-height: 34px;
+    border-radius: 6px;
+    user-select: none;
+    border: 1px solid rgb(236, 219, 219);
+    color: #2a81dd;
+}
+
+.rdbtn input[type='radio']:checked + label {
+    background: #d6ecfb;
+    border: none;
+    color: black;
+}
+
+.rdbtn label:hover {
+    color: #666;
+}
+
+.popup__sizes {
+    margin-top: 24px;
+    font-family:
+        'Open Sans',
+        sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.popup__detailsFaq {
+    margin-top: 24px;
+    font-family:
+        'Open Sans',
+        sans-serif;
+    font-style: 900;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.popup__text {
+    margin-top: 4px;
+    font-family:
+        'Open Sans',
+        sans-serif;
+    font-style: 900;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.popup__mainImg {
+    width: 330px;
+    height: 330px;
+    position: relative;
+}
+
+.preview {
+    margin: 0;
+    position: absolute;
+    margin-right: -50%;
+    transform: translate(50%, -50%)
+}
+
+.preview label > input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.preview label > input + img {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.preview label > input:checked + img {
+    border: 2px solid #2a81dd;
+}

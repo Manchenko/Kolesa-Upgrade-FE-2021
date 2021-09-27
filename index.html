@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="app"></div>
     <script type="module" src="/src/js/main.js"></script>
-  </body>
+    <!-- модальное окно -->
+    <div id='popup' class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__contentImg">
+                    <img class='popup__mainImg' src="./src/assets/image 7.png" alt="awesome T-shirt">
+                    <form class="preview">
+                        <label>
+                            <input class="preview" type="radio" id="1" name="shirt__preview" value="1">
+                            <img src="/src/assets/🌆 Image.png" alt="">
+                        </label>
+                        <label>
+                            <input class="preview" type="radio" id="2" name="shirt__preview" value="2">
+                            <img src="/src/assets/🌆 Image2.png" alt="">
+                        </label>
+                        <label>
+                            <input class="preview" type="radio" id="3" name="shirt__preview" value="2">
+                            <img src="/src/assets/🌆 Image3.png" alt="">
+                        </label>
+                    </form>
+                </div>
+                <div class="popup_mainContent">
+                    <div class="popup__title">Футболка "Эволюционируй или сдохни"!</div>
+                    <a href="">
+                        <img class='popup__close' src="/src/assets/Icon shape.svg" alt="">
+                    </a>
+                    <div class="popup__balance">
+                        <div class="your__balance">Твой баланс:</div>
+                        <div class="balance">3 945 баллов</div>
+                    </div>
+                    <div class="popup__price">100 баллов</div>
+                    <button class="btn" type="button">Заказать</button>
+                    <div class="popup__colors">Цвета:</div>
+                    <form class="rdbtn">
+                        <div class="rdbtn">
+                            <input class="rdbtn1" id="rd1" name="radioBtn" type="radio" value='Синий'>
+                            <label for="rd1">Синий</label>
+                        </div>
+                        <div class="rdbtn">
+                            <input class="rdbtn2" id="rd2" name="radioBtn" type="radio" value='Бежевый'>
+                            <label for="rd2">Бежевый</label>
+                        </div>
+                        <div class="rdbtn">
+                            <input class="rdbtn3" id="rd3" name="radioBtn" type="radio" value='Серый'>
+                            <label for="rd3">Серый</label>
+                        </div>
+                    </form>
+                    <div class="popup__sizes">Размер:</div>
+                    <form class="rdbtn">
+                        <div class="rdbtn">
+                            <input class="rdbtn4" id="rd4" name="radioBtn" type="radio" value='S'>
+                            <label for="rd4">S</label>
+                        </div>
+                        <div class="rdbtn">
+                            <input class="rdbtn5" id="rd5" name="radioBtn" type="radio" value='M'>
+                            <label for="rd5">M</label>
+                        </div>
+                        <div class="rdbtn">
+                            <input class="rdbtn6" id="rd6" name="radioBtn" type="radio" value='L'>
+                            <label for="rd6">L</label>
+                        </div>
+                    </form>
+                    <div class="popup__detailsFaq"><b>Детали:</b></div>
+                    <div class="popup__text">Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза
+                        20%</div>
+                    <div class="popup__detailsFaq"><b>Как выбрать размер:</b></div>
+                    <div class="popup__text">Написать дяде Рику для уточнения.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

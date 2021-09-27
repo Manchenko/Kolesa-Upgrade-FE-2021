@@ -1,9 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); */
-
-#app {
-    font-family: Open sans, sans-serif;
-}
-
 /* modal */
 
 .modal {
@@ -29,6 +23,7 @@
 .modal__images {
     max-width: 330px;
     width: 100%;
+    margin-right: 24px;
 }
 
 .modal__images img {
@@ -85,11 +80,8 @@
     color: #fff;
     font-size: 14px;
     line-height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 134px;
-    height: 36px;
+    min-width: 134px;
+    padding: 6px 6px;
 }
 
 .modal__yourbalance {
@@ -135,7 +127,7 @@
     display: none;
 }
 
-.modal__color--lable {
+.modal__color--label {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -148,8 +140,11 @@
     cursor: pointer;
 }
 
-.modal__color--lable > span {
+.modal__color--label > span {
     user-select: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
 }
 
 .modal__color--container {
@@ -159,28 +154,36 @@
     border-radius: 4px;
 }
 
-.modal__radio:checked + .modal__color--lable {
+.modal__radio:checked + .modal__color--label {
     background-color: #d6ecfb;
     border: 1px #d6ecfb solid;
     color: #1c1819;
 }
 
-.modal__size--lable {
+.modal__size--label {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 40px;
-    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     border: 1px #e8e8e8 solid;
     border-radius: 8px;
     margin-right: 8px;
     margin-bottom: 6px;
+    padding: 4px;
     color: #2a81dd;
     cursor: pointer;
 }
 
-.modal__radio:checked + .modal__size--lable {
+.modal__size--label > span {
+    user-select: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
+}
+
+.modal__radio:checked + .modal__size--label {
     background-color: #d6ecfb;
     border: 1px #d6ecfb solid;
     color: #1c1819;

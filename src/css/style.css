@@ -1,19 +1,17 @@
-#app {
-    font-family: 'Open Sans', Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
-    line-height: 171%;
-    position: relative;
-    font-size: 14px;
-    height: 100vh;
-    background-color: #1c1819;
-}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Avenir, Helvetica, Arial, sans-serif;
+    color: #1c1819;
+    line-height: 171%;
+    position: relative;
+    font-size: 14px;
+    height: 100vh;
 }
 
 h1,
@@ -33,6 +31,8 @@ button {
     background: transparent;
     cursor: pointer;
 }
+
+/* modal-window=================================== */
 
 .modal-window-wrap {
     position: fixed;
@@ -164,7 +164,7 @@ button {
 .colors__item {
     -webkit-appearance: none;
     appearance: none;
-    opacity: 0;
+    display: none;
 }
 
 .colors__item:checked + .colors__label {
@@ -174,11 +174,11 @@ button {
 }
 
 .colors__label {
-    padding: 8px 8px 8px 39px;
+    padding: 8px;
     border-radius: 8px;
     border: 1px solid rgba(28, 24, 25, 0.1);
-    position: relative;
     margin-right: 8px;
+    display: flex;
     color: #2a81dd;
 }
 
@@ -190,10 +190,7 @@ button {
     width: 23px;
     height: 24px;
     border-radius: 4px;
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    z-index: 3;
+    margin-right: 8px;
 }
 
 .colors__blue::before {
@@ -239,4 +236,21 @@ button {
 .details__title,
 .question__title {
     font-size: 14px;
+}
+
+/* main-page======================================================== */
+
+.global-wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template: minmax(104px, auto) 1fr minmax(100px, auto) / 1fr;
+}
+
+.header {
+    background-color: tomato;
+    grid-area: header;
+}
+
+.footer {
+    background-color: teal;
 }

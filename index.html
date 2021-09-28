@@ -14,14 +14,21 @@
 <body>
     <div id="app" class="global-wrapper">
         <header class="header">
-            <a href="#" class="header__logo">
-                <img src="src/assets/Kolesagroup.svg" alt="">
-            </a>
-            <input type="text" class="header__search">
+            <div class="header__logo-wrap">
+                <a href="#" class="header__logo">
+                    <img src="src/assets/Kolesagroup.svg" alt="">
+                </a>
+            </div>
+            <div class="header__search">
+                <button type="button" class="header__search-btn"></button>
+                <input type="text" class="header__search-input" placeholder="Поиск">
+            </div>
             <div class="header__account">
-                <img src="src/assets/rick.png" alt="">
-                <a href="#" class="header__user">Мортиджан</a>
-                <span class="header__text">300 баллов</span>
+                <img src="src/assets/rick.png" alt="Картинка Рика" class="user-image">
+                <div class="header__user-desc">
+                    <a href="#" class="header__user">Мортиджан</a>
+                    <span class="header__text">300 баллов</span>
+                </div>
             </div>
         </header>
         <main class="main">
@@ -32,10 +39,10 @@
                             <a href="#" class="sidebar__link">Оргсхема</a>
                         </li>
                         <li>
-                            <a href="#" class="sidebar__link">Kolesa Team</a>
+                            <a href="#" class="sidebar__link">Kolesa <span>Team</span></a>
                         </li>
                         <li>
-                            <a href="#" class="sidebar__link">Kolesa Shop</a>
+                            <a href="#" class="sidebar__link active">Kolesa <span>Shop</span></a>
                         </li>
                         <li>
                             <a href="#" class="sidebar__link">Картина компании</a>
@@ -60,68 +67,128 @@
             </aside>
             <section class="content">
                 <div class="content__image image">
+                    <div class="image__desc">
+                        <h1 class="image__desc-title">Летняя распродажа -50%</h1>
+                        <p class="image__desc-text">Дедлайн: понедельник, 10:00</p>
+                    </div>
                     <img src="src/assets/banner.jpg" alt="Футболка Эволюционируй или" class="image__item">
                 </div>
                 <div class="content__questions questions">
-                    <button type="button" class="questions__item">Получить баллы</button>
-                    <button type="button" class="questions__item">Как получить баллы</button>
-                    <button type="button" class="questions__item">Подарить баллы</button>
+                    <button type="button" class="questions__item questions__item_take">Получить баллы</button>
+                    <button type="button" class="questions__item questions__item_how">Как получить баллы</button>
+                    <button type="button" class="questions__item questions__item_present">Подарить баллы</button>
                 </div>
                 <div class="content__tabs tabs">
                     <div class="tabs__items">
-                        <input type="radio" class="tabs__input" id="tabs-1" name="tabs">
-                        <label for="tabs-1" class="tabs__label">S</label>
-
-                        <input type="radio" class="tabs__input" id="tabs-2" name="tabs">
-                        <label for="tabs-2" class="tabs__label">M</label>
-
-                        <input type="radio" class="tabs__input" id="tabs-3" name="tabs">
-                        <label for="tabs-3" class="tabs__label">L</label>
+                        <button type="button" class="tabs__item active">Все товары</button>
+                        <button type="button" class="tabs__item">Одежда</button>
+                        <button type="button" class="tabs__item">Аксессуары</button>
                     </div>
                 </div>
                 <div class="content__products products">
                     <div class="products__item">
                         <a href="#" class="products__image">
-                            <img src="src/assets/image04.jpg" alt="">
+                            <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                            <span class="products__label">New</span>
                         </a>
-                        <span class="products__label"></span>
-                        <h3 class="products__ball">220 баллов</h3>
-                        <a href="#" class="products__name">Футболка "Эволюционируй или ...</a>
-                        <p class="products__sizes">Размеры S/M/L </p>
+                        <div class="products__desc">
+                            <h3 class="products__ball">220 баллов</h3>
+                            <a href="#" class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или ...</a>
+                            <p class="products__sizes">Размеры S/M/L </p>
+                            <button type="button" class="products__btn">Заказать</button>
+                        </div>
                     </div>
                     <div class="products__item">
                         <a href="#" class="products__image">
-                            <img src="src/assets/image04.jpg" alt="">
+                            <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                            <span class="products__label">New</span>
                         </a>
-                        <span class="products__label"></span>
-                        <h3 class="products__ball">220 баллов</h3>
-                        <a href="#" class="products__name">Футболка "Эволюционируй или ...</a>
-                        <p class="products__sizes">Размеры S/M/L </p>
+                        <div class="products__desc">
+                            <h3 class="products__ball">220 баллов</h3>
+                            <a href="#" class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или ...</a>
+                            <p class="products__sizes">Размеры S/M/L </p>
+                            <button type="button" class="products__btn">Заказать</button>
+                        </div>
                     </div>
                     <div class="products__item">
                         <a href="#" class="products__image">
-                            <img src="src/assets/image04.jpg" alt="">
+                            <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
                         </a>
-                        <span class="products__label"></span>
-                        <h3 class="products__ball">220 баллов</h3>
-                        <a href="#" class="products__name">Футболка "Эволюционируй или ...</a>
-                        <p class="products__sizes">Размеры S/M/L </p>
+                        <div class="products__desc">
+                            <h3 class="products__ball">220 баллов</h3>
+                            <a href="#" class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или ...</a>
+                            <p class="products__sizes">Размеры S/M/L </p>
+                            <button type="button" class="products__btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a href="#" class="products__image">
+                            <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                        </a>
+                        <div class="products__desc">
+                            <h3 class="products__ball">220 баллов</h3>
+                            <a href="#" class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или ...</a>
+                            <p class="products__sizes">Размеры S/M/L </p>
+                            <button type="button" class="products__btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a href="#" class="products__image">
+                            <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                        </a>
+                        <div class="products__desc">
+                            <h3 class="products__ball">220 баллов</h3>
+                            <a href="#" class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или ...</a>
+                            <p class="products__sizes">Размеры S/M/L </p>
+                            <button type="button" class="products__btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a href="#" class="products__image">
+                            <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                        </a>
+                        <div class="products__desc">
+                            <h3 class="products__ball">220 баллов</h3>
+                            <a href="#" class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или ...</a>
+                            <p class="products__sizes">Размеры S/M/L </p>
+                            <button type="button" class="products__btn">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a href="#" class="products__image">
+                            <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                        </a>
+                        <div class="products__desc">
+                            <h3 class="products__ball">220 баллов</h3>
+                            <a href="#" class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или ...</a>
+                            <p class="products__sizes">Размеры S/M/L </p>
+                            <button type="button" class="products__btn">Заказать</button>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
-            <div class="footer__copy"></div>
-            <div class="footer__socials socials">
-                <a href="#" class="socials__item">
-                    <img src="src/assets/Instagram.svg" alt="instagram">
-                </a>
-                <a href="#" class="socials__item">
-                    <img src="src/assets/YouTube.svg" alt="youtube">
-                </a>
-                <a href="#" class="socials__item">
-                    <img src="src/assets/VK.svg" alt="vkontakte">
-                </a>
+            <div class="footer__left-side">
+                <p class="footer__copy">© Kolesa Group</p>
+                <div class="footer__socials socials">
+                    <a href="#" class="socials__item">
+                        <img src="src/assets/Instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#" class="socials__item">
+                        <img src="src/assets/YouTube.svg" alt="youtube">
+                    </a>
+                    <a href="#" class="socials__item">
+                        <img src="src/assets/VK.svg" alt="vkontakte">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__desc">
+                <p class="footer__desc-item">Есть идеи что улучшить? </p>
+                <p class="footer__desc-item">Не знаешь, с кем решить проблему?</p>
+            </div>
+            <div class="footer__btn">
+                <button type="button" class="footer__button">Написать</button>
             </div>
         </footer>
     </div>

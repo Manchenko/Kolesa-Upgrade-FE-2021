@@ -4,6 +4,7 @@
 *::before,
 *::after {
     box-sizing: inherit;
+    user-select: none;
 }
 
 html {
@@ -58,6 +59,8 @@ select {
     font: inherit;
     border: none;
     outline: none;
+    padding: 0;
+    background-color: transparent;
 }
 
 button {

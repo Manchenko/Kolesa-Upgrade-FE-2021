@@ -15,17 +15,18 @@
             <header class="header dl-flex">
                 <div class="header__kolesa-logo"><img src="/src/assets/Vector.svg" alt="Kolesa Logo"></div>
                 <div class="header__search-box">
-                    <label>
-                        <input type="search" name="search-box" id="search-box" placeholder="Поиск">
-                        <button type="submit" class="mag-glass"><img src="/src/assets/Icon shape.svg"
-                                alt="Mag-glass"></button></label>
+                    <input type="search" name="search-box" id="search-box" placeholder="Поиск">
+                    <label for="search-box"><img src="/src/assets/Icon shape.svg" alt="Mag-glass"
+                            class="mag-glass"></label>
                 </div>
-                <div class="header__profile dl-flex">
-                    <img src="/src/assets/profile pic.jpg" alt="Profile picture" class="profile__pic">
-                    <div class="profile__right">
-                        <div class="profile__name fw-600"><a href="">Мортиджан</a></div>
-                        <div class="profile__balance">300 баллов</div>
-                    </div>
+                <div class="header__profile">
+                    <a href="#" class='profile__link dl-flex'><img src="/src/assets/profile pic.jpg" alt="Profile picture"
+                            class="profile__pic">
+                        <div class="profile__right">
+                            <div class="profile__name fw-600">Мортиджан</div>
+                            <div class="profile__balance">300 баллов</div>
+                        </div>
+                    </a>
                 </div>
             </header>
             <div class="body dl-flex">
@@ -182,8 +183,6 @@
             </div>
         </footer>
     </div>
-
-
 </body>
 
 </html>

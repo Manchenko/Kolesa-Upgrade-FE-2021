@@ -16,20 +16,24 @@
         <header class="header">
             <div class="header__logo-wrap">
                 <a href="#" class="header__logo">
-                    <img src="src/assets/Kolesagroup.svg" alt="">
+                    <img src="src/assets/Kolesagroup.svg" alt="Kolesagroup логотип">
                 </a>
             </div>
-            <div class="header__search">
-                <button type="button" class="header__search-btn"></button>
-                <input type="text" class="header__search-input" placeholder="Поиск">
+            <div class="header__search search">
+                <form action="" class="search__form">
+                    <button type="submit" title="Поиск" class="search__form-btn"></button>
+                    <input type="text" class="search__form-input" placeholder="Поиск">
+                </form>
             </div>
-            <a href="#" class="header__account">
-                <img src="src/assets/rick.png" alt="Картинка Рика" class="user-image">
-                <div class="header__user-desc">
-                    <span class="header__user-name">Мортиджан</span>
-                    <span class="header__user-text">300 баллов</span>
-                </div>
-            </a>
+            <div class="header__account-wrap">
+                <a href="#" class="header__account">
+                    <img src="src/assets/rick.png" alt="Картинка Рика" class="user-image">
+                    <span class="header__user-desc">
+                        <span class="header__user-name">Мортиджан</span>
+                        <span class="header__user-text">300 баллов</span>
+                    </span>
+                </a>
+            </div>
         </header>
         <main class="main">
             <aside class="sidebar">
@@ -67,11 +71,7 @@
             </aside>
             <section class="content">
                 <div class="content__image image">
-                    <div class="image__desc">
-                        <h1 class="image__desc-title">Летняя распродажа -50%</h1>
-                        <p class="image__desc-text">Дедлайн: понедельник, 10:00</p>
-                    </div>
-                    <img src="src/assets/banner.jpg" alt="Футболка Эволюционируй или" class="image__item">
+                    <img src="src/assets/banner.jpg" alt="Футболка Эволюционируй или сдохни" class="image__item">
                 </div>
                 <div class="content__questions questions">
                     <button type="button" class="questions__item questions__item_take">Получить баллы</button>

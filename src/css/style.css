@@ -40,7 +40,6 @@ button {
     border: none;
     background: transparent;
     cursor: pointer;
-    transition: all ease 0.5s;
 }
 
 /* modal-window=================================== */
@@ -285,7 +284,7 @@ button {
     grid-column: 3 / 4;
     margin-left: -40px;
     font-size: 18px;
-    transition: ease 0.5s;
+    transition: box-shadow ease 0.5s;
 }
 
 .search__form-input:focus {
@@ -301,6 +300,7 @@ button {
     top: 10px;
     z-index: 5;
     margin-left: 16px;
+    transition: transform ease 0.5s;
 }
 
 .search__form-btn:active {
@@ -362,7 +362,7 @@ button {
 .sidebar__link {
     font-size: 16px;
     color: #1c1819;
-    transition: ease 0.5s;
+    transition: color ease 0.5s;
 }
 
 .sidebar__link span {
@@ -416,6 +416,7 @@ button {
     font-weight: 600;
     border: 1px solid #fff;
     margin-bottom: 40px;
+    transition: all ease 0.5s;
 }
 
 .questions__item_take {
@@ -482,6 +483,7 @@ button {
     margin: 0 8px 16px 0;
     font-size: 14px;
     color: #2a81dd;
+    transition: box-shadow ease 0.5s;
 }
 
 .tabs__item:hover {
@@ -515,7 +517,7 @@ button {
     z-index: 1;
     max-width: 330px;
     border-radius: 8px;
-    transition: all ease 0.5s;
+    transition: box-shadow ease 0.5s;
 }
 
 .products__item-content:hover {
@@ -586,6 +588,7 @@ button {
     display: none;
     border: 1px solid #fff;
     box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+    transition: all ease 0.5s;
 }
 
 .products__btn:hover {
@@ -619,6 +622,14 @@ button {
     margin-top: 8px;
 }
 
+.socials__item-icon {
+    transition: transform ease 0.5s;
+}
+
+.socials__item-icon:hover {
+    transform: scale(1.5, 1.5);
+}
+
 .footer__desc {
     grid-column: 3 / 4;
 }
@@ -630,6 +641,7 @@ button {
     color: #2a81dd;
     min-height: 36px;
     border: 1px solid #1c1819;
+    transition: all ease 0.5s;
 }
 
 .footer__button:hover {

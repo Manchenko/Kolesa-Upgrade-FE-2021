@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Avenir, Helvetica, Arial, sans-serif;
+    color: #1c1819;
+    line-height: 171%;
+    position: relative;
+    font-size: 14px;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+button {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

@@ -1,0 +1,327 @@
+
+.main {
+    padding: 0 24px;
+}
+
+.sidebar {
+    grid-column: 2 / 3;
+    padding-top: 6px;
+    display: none;
+}
+
+.menu__list {
+    & li {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 26px;
+        }
+    }
+}
+
+.menu__link {
+    font-size: 16px;
+    color: $dark;
+    transition: color ease 0.5s;
+
+    & span {
+        font-weight: 600;
+    }
+
+    &:hover {
+        color: $blue;
+    }
+
+    &.active {
+        font-weight: 600;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        background: $blue;
+        width: 4px;
+        height: 36px;
+
+        @include br(10px);
+
+        position: absolute;
+        left: -12px;
+        top: -6px;
+        transition: ease 0.5s;
+        opacity: 0;
+    }
+
+    &.active::before {
+        opacity: 1;
+    }
+}
+
+.content {
+    grid-column: 3 / 4;
+
+    &__image {
+        margin-bottom: 20px;
+    }
+
+    &__questions {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.image {
+    &__item-mob {
+        width: 100%;
+    }
+
+    &__item-desc {
+        display: none;
+    }
+}
+
+.questions {
+    &__item {
+        width: 100%;
+
+        @include br(16px);
+
+        padding: 8px 24px;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+        border: 1px solid $white;
+        margin: 4px 0;
+        transition: all ease 0.5s;
+
+        &_take {
+            background: $white-green;
+
+            &:hover {
+                border: 1px solid $white-green;
+                box-shadow: 0 0 10px $white-green;
+                background: transparent;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                background: url('../assets/plus.png') no-repeat center center;
+                width: 48px;
+                height: 56px;
+                margin-right: 16px;
+            }
+        }
+
+        &_how {
+            background: $white-yellow;
+
+            &:hover {
+                border: 1px solid $white-yellow;
+                box-shadow: 0 0 10px $white-yellow;
+                background: transparent;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                background: url('../assets/question.png') no-repeat center center;
+                width: 48px;
+                height: 56px;
+                margin-right: 16px;
+            }
+        }
+
+        &_present {
+            background: $white-blue;
+
+            &:hover {
+                border: 1px solid $white-blue;
+                box-shadow: 0 0 10px $white-blue;
+                background: transparent;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                background: url('../assets/present.png') no-repeat center center;
+                width: 48px;
+                height: 56px;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+.tabs {
+    gap: 8px;
+    display: flex;
+    overflow-x: auto;
+    margin: 32px 0 16px;
+
+    &__item {
+        min-width: 100px;
+        height: 36px;
+        padding: 0 4px;
+        border-radius: 8px;
+        border: 1px solid rgba(28, 24, 25, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: $blue;
+        transition: box-shadow ease 0.5s;
+
+        &:hover {
+            box-shadow: 0 0 10px rgba(28, 24, 25, 0.1);
+        }
+
+        &.active {
+            background: $tabs;
+            border: 1px solid $tabs;
+            color: $dark;
+        }
+    }
+}
+
+/* products================================================================= */
+
+.content__products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 24px;
+}
+
+.products {
+    &__item {
+        max-width: 330px;
+        width: 100%;
+        min-height: 474px;
+        position: relative;
+
+        &-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            max-width: 330px;
+            border-radius: 8px;
+            transition: box-shadow ease 0.5s;
+
+            &:hover {
+                box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
+                z-index: 2;
+
+                & .products__ball {
+                    color: $red;
+                }
+
+                & .products__btn {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__image {
+        position: relative;
+
+        & img {
+            border-radius: 8px;
+            width: 100%;
+        }
+    }
+
+    &__label {
+        @include br(4px);
+
+        position: absolute;
+        background: $green;
+        padding: 0 4px;
+        text-transform: uppercase;
+        color: $white;
+        font-size: 13px;
+        left: 16px;
+        bottom: 16px;
+    }
+
+    &__desc {
+        padding: 16px;
+        max-width: 330px;
+    }
+
+    &__ball {
+        font-size: 24px;
+        font-weight: 600;
+        color: $blue;
+        margin-bottom: 12px;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 16px;
+        color: $dark;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__sizes {
+        margin: 4px 0 16px;
+    }
+
+    &__btn {
+        @include br(8px);
+
+        max-width: 298px;
+        width: 100%;
+        padding: 12px;
+        background: $blue;
+        color: $white;
+        font-size: 16px;
+        display: none;
+        border: 1px solid $white;
+        box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+        transition: background ease 0.5s;
+
+        &:hover {
+            border: 1px solid $blue;
+            background: transparent;
+            color: $blue;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template: 1fr / 1fr 281px minmax(auto, 1038px) 1fr;
+        padding-bottom: 100px;
+    }
+
+    .sidebar {
+        display: block;
+    }
+}
+
+@media (min-width: 723px) {
+    .questions__item {
+        max-width: 330px;
+    }
+}
+
+@media (min-width: 575px) {
+    .image {
+        &__item-desc {
+            display: block;
+            width: 100%;
+        }
+
+        &__item-mob {
+            display: none;
+        }
+    }
+}

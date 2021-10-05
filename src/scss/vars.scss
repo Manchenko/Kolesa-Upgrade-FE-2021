@@ -1,0 +1,14 @@
+$dark: #1c1819;
+$blue: #2a81dd;
+$white: #fff;
+$green: #64bd38;
+$red: red;
+$white-green: #eff8eb;
+$white-yellow: #fffae7;
+$white-blue: #e9f2fb;
+$tabs: #d6ecfb;
+$search: #f2f2f3;
+
+@mixin br($r) {
+    border-radius: $r;
+}

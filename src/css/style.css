@@ -257,98 +257,14 @@ button {
     grid-template-areas: 'header' 'main' 'footer';
 }
 
-.header {
-    display: grid;
-    grid-area: header;
-    grid-template: 1fr / 1fr 281px minmax(auto, 892px) minmax(auto, 195px) 1fr;
-    padding: 32px 0 24px;
-    align-items: center;
-}
-
-.header__logo-wrap {
-    grid-column: 2 / 3;
-}
-
-.search__form {
-    display: flex;
-    align-items: center;
-}
-
-.search__form-input {
-    max-width: 308px;
-    width: 100%;
-    height: 44px;
-    padding-left: 56px;
-    border-radius: 8px;
-    background-color: #f2f2f3;
-    grid-column: 3 / 4;
-    margin-left: -40px;
-    font-size: 18px;
-    transition: box-shadow ease 0.5s;
-}
-
-.search__form-input:focus {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    background: #fff;
-}
-
-.search__form-btn {
-    background: url('../assets/search-big.svg');
-    width: 24px;
-    height: 24px;
-    left: 16px;
-    top: 10px;
-    z-index: 5;
-    margin-left: 16px;
-    transition: transform ease 0.5s;
-}
-
-.search__form-btn:active {
-    transform: scale(2, 2);
-}
-
-.header__account {
-    display: flex;
-    max-width: 146px;
-    justify-content: space-between;
-    grid-column: 4 / 5;
-}
-
-.user-image {
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-}
-
-.header__user-desc {
-    margin-left: 16px;
-}
-
-.header__user-name {
-    color: #2a81dd;
-    font-weight: 600;
-}
-
-.header__user-text {
-    color: #1c1819;
-}
-
 .main {
-    grid-area: main;
-    display: grid;
-    padding: 0 15px;
-    grid-template: 1fr / 1fr 281px minmax(auto, 1038px) 50px 1fr;
-    padding-bottom: 100px;
-}
-
-.content__image {
-    position: relative;
-    margin-bottom: 20px;
+    padding: 0 24px;
 }
 
 .sidebar {
     grid-column: 2 / 3;
     padding-top: 6px;
+    display: none;
 }
 
 .sidebar__list li {
@@ -399,6 +315,18 @@ button {
     grid-column: 3 / 4;
 }
 
+.content__image {
+    margin-bottom: 20px;
+}
+
+.image__item-mob {
+    width: 100%;
+}
+
+.image__item-desc {
+    display: none;
+}
+
 .content__questions {
     display: flex;
     justify-content: space-between;
@@ -406,16 +334,15 @@ button {
 }
 
 .questions__item {
-    max-width: 330px;
     width: 100%;
-    padding: 8px 24px;
     border-radius: 16px;
+    padding: 8px 24px;
     display: flex;
     align-items: center;
     font-size: 20px;
     font-weight: 600;
     border: 1px solid #fff;
-    margin-bottom: 40px;
+    margin: 4px 0;
     transition: all ease 0.5s;
 }
 
@@ -471,16 +398,22 @@ button {
     background: url('../assets/present.png') no-repeat center center;
 }
 
-.tabs__items {
+.tabs {
+    gap: 8px;
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    margin: 32px 0 16px;
 }
 
 .tabs__item {
-    padding: 8px 22px;
+    min-width: 100px;
+    height: 36px;
+    padding: 0 4px;
     border-radius: 8px;
     border: 1px solid rgba(28, 24, 25, 0.1);
-    margin: 0 8px 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 14px;
     color: #2a81dd;
     transition: box-shadow ease 0.5s;
@@ -500,12 +433,13 @@ button {
 
 .content__products {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 24px;
 }
 
 .products__item {
     max-width: 330px;
+    width: 100%;
     min-height: 474px;
     position: relative;
 }
@@ -539,6 +473,7 @@ button {
 
 .products__image img {
     border-radius: 8px;
+    width: 100%;
 }
 
 .products__label {
@@ -555,6 +490,7 @@ button {
 
 .products__desc {
     padding: 16px;
+    max-width: 330px;
 }
 
 .products__ball {
@@ -588,7 +524,7 @@ button {
     display: none;
     border: 1px solid #fff;
     box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
-    transition: all ease 0.5s;
+    transition: background ease 0.5s;
 }
 
 .products__btn:hover {
@@ -601,17 +537,16 @@ button {
 
 .footer {
     background-color: #1c1819;
-    display: grid;
     grid-area: footer;
-    grid-template: 1fr / 1fr 915px minmax(auto, 304px) minmax(auto, 150px) 1fr;
-    padding: 20px 0 22px;
+    padding: 20px 24px 22px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     color: #fff;
 }
 
 .footer__left-side {
     grid-column: 2 / 3;
-    padding-left: 12px;
 }
 
 .footer__copy {
@@ -630,12 +565,19 @@ button {
     transform: scale(1.5, 1.5);
 }
 
+.footer__right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .footer__desc {
-    grid-column: 3 / 4;
+    max-width: 250px;
+    display: none;
 }
 
 .footer__button {
-    width: 100%;
+    width: 150px;
     background: #fff;
     border-radius: 8px;
     color: #2a81dd;

@@ -8,70 +8,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
-    <div id="app" class="global-wrapper">
+    <div id="app" class="app">
         <header class="header">
-            <div class="header__logo-wrap">
-                <a href="#" class="header__logo">
+            <div class="header__mobile-left mobile">
+                <div class="mobile__burger">
+                    <a href="#" class="mobile__burger-item">
+                        <img src="src/assets/burger.svg" alt="Кнопка меню">
+                    </a>
+                </div>
+                <div class="mobile__logo">
+                    <a href="#" class="mobile__logo-item">
+                        <img src="src/assets/Kolesa-group-mob.svg" alt="Kolesagroup логотип мини">
+                    </a>
+                </div>
+            </div>
+            <div class="header__logo">
+                <a href="#" class="header__logo-item">
                     <img src="src/assets/Kolesagroup.svg" alt="Kolesagroup логотип">
                 </a>
             </div>
-            <div class="header__search search">
-                <form action="" class="search__form">
-                    <button type="submit" title="Поиск" class="search__form-btn"></button>
-                    <input type="text" class="search__form-input" placeholder="Поиск">
+            <div class="header__right">
+                <form action="" class="header__right-search search">
+                    <input type="text" class="search__input" name="search" placeholder="Поиск">
+                    <button type="button" title="Поиск" id="btn" class="search__btn"></button>
                 </form>
-            </div>
-            <div class="header__account-wrap">
-                <a href="#" class="header__account">
-                    <img src="src/assets/rick.png" alt="Картинка Рика" class="user-image">
-                    <span class="header__user-desc">
-                        <span class="header__user-name">Мортиджан</span>
-                        <span class="header__user-text">300 баллов</span>
-                    </span>
-                </a>
+                <div class="header__right-account">
+                    <a href="#" class="account">
+                        <img src="src/assets/rick.png" alt="Картинка Рика" class="account__image">
+                        <span class="account__desc description">
+                            <span class="description__name">Мортиджан</span>
+                            <span class="description__text">300 баллов</span>
+                        </span>
+                    </a>
+                </div>
             </div>
         </header>
         <main class="main">
             <aside class="sidebar">
-                <nav class="sidebar__menu">
-                    <ul class="sidebar__list">
+                <nav class="sidebar__menu menu">
+                    <ul class="menu__list">
                         <li>
-                            <a href="#" class="sidebar__link">Оргсхема</a>
+                            <a href="#" class="menu__link">Оргсхема</a>
                         </li>
                         <li>
-                            <a href="#" class="sidebar__link">Kolesa <span>Team</span></a>
+                            <a href="#" class="menu__link">Kolesa <span>Team</span></a>
                         </li>
                         <li>
-                            <a href="#" class="sidebar__link active">Kolesa <span>Shop</span></a>
+                            <a href="#" class="menu__link active">Kolesa <span>Shop</span></a>
                         </li>
                         <li>
-                            <a href="#" class="sidebar__link">Картина компании</a>
+                            <a href="#" class="menu__link">Картина компании</a>
                         </li>
                         <li>
-                            <a href="#" class="sidebar__link">Новости</a>
+                            <a href="#" class="menu__link">Новости</a>
                         </li>
                         <li>
-                            <a href="#" class="sidebar__link">Education</a>
+                            <a href="#" class="menu__link">Education</a>
                         </li>
                         <li>
-                            <a href="#" class="sidebar__link">Guidelines</a>
+                            <a href="#" class="menu__link">Guidelines</a>
                         </li>
                         <li>
-                            <a href="#" class="sidebar__link">Библиотека</a>
+                            <a href="#" class="menu__link">Библиотека</a>
                         </li>
                         <li>
-                            <a href="#" class="sidebar__link">FAQ</a>
+                            <a href="#" class="menu__link">FAQ</a>
                         </li>
                     </ul>
                 </nav>
             </aside>
             <section class="content">
                 <div class="content__image image">
-                    <img src="src/assets/banner.jpg" alt="Футболка Эволюционируй или сдохни" class="image__item">
+                    <img src="src/assets/banner-mob2.jpg" alt="Футболка Эволюционируй или сдохни" class="image__item-mob">
+                    <img src="src/assets/banner.jpg" alt="Футболка Эволюционируй или сдохни" class="image__item-desc">
                 </div>
                 <div class="content__questions questions">
                     <button type="button" class="questions__item questions__item_take">Получить баллы</button>
@@ -79,11 +91,9 @@
                     <button type="button" class="questions__item questions__item_present">Подарить баллы</button>
                 </div>
                 <div class="content__tabs tabs">
-                    <div class="tabs__items">
-                        <button type="button" class="tabs__item active">Все товары</button>
-                        <button type="button" class="tabs__item">Одежда</button>
-                        <button type="button" class="tabs__item">Аксессуары</button>
-                    </div>
+                    <button type="button" class="tabs__item active">Все товары</button>
+                    <button type="button" class="tabs__item">Одежда</button>
+                    <button type="button" class="tabs__item">Аксессуары</button>
                 </div>
                 <div class="content__products products">
                     <div class="products__item">
@@ -183,7 +193,7 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="footer__left-side">
+            <div class="footer__left socials">
                 <p class="footer__copy">© Kolesa Group</p>
                 <div class="footer__socials socials">
                     <a href="https://www.instagram.com/" rel="nofollow noopener noreferrer" target="_blank" class="socials__item">
@@ -197,16 +207,18 @@
                     </a>
                 </div>
             </div>
-            <div class="footer__desc">
-                <p class="footer__desc-item">Есть идеи что улучшить? </p>
-                <p class="footer__desc-item">Не знаешь, с кем решить проблему?</p>
-            </div>
-            <div class="footer__btn">
-                <button type="button" class="footer__button">Написать</button>
+            <div class="footer__right">
+                <div class="footer__desc">
+                    <p class="footer__desc-item">Есть идеи что улучшить? </p>
+                    <p class="footer__desc-item">Не знаешь, с кем решить проблему?</p>
+                </div>
+                <div class="footer__btn">
+                    <button type="button" class="footer__button">Написать</button>
+                </div>
             </div>
         </footer>
     </div>
-    <script src="main.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
 </body>
 
 </html>

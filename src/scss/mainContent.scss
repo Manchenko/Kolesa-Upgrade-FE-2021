@@ -1,0 +1,232 @@
+@import 'vars';
+
+// main-content
+
+.main-content {
+    flex: 1 1 auto;
+    margin-left: 280px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.banner {
+    & > img {
+        display: block;
+        border-radius: 8px;
+        margin-top: 24px;
+        object-fit: cover;
+        max-width: 100%;
+    }
+}
+
+.search {
+    position: relative;
+
+    &__input {
+        @include fonts (18px, 28px, 400);
+
+        color: $blackPrimary;
+        width: 308px;
+        height: 44px;
+        background-color: #f2f2f3;
+        border-radius: 8px;
+        padding: 8px 8px 8px 56px;
+
+        &:focus {
+            border: 1px solid $blackPrimary;
+        }
+
+        &::placeholder {
+            color: $textGray;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 10px;
+        left: 16px;
+
+        & > img {
+            display: block;
+        }
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+        margin-right: 16px;
+        width: 44px;
+        height: 44px;
+
+        & > img {
+            border-radius: 50%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+
+    .user__info {
+        display: flex;
+        flex-direction: column;
+
+        &__name {
+            @include fonts (14px, 24px, 600);
+
+            color: $bluePrimary;
+        }
+
+        &__point {
+            @include fonts (13px, 20px, 400);
+
+            color: $blackPrimary;
+        }
+    }
+}
+
+.point-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px 24px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+
+    &__item {
+        flex: 0 1 330px;
+        display: flex;
+        align-items: center;
+        padding: 16px 24px;
+        border-radius: 16px;
+
+        .point-btns__img {
+            margin-right: 16px;
+        }
+
+        .point-btns__text {
+            @include fonts (20px, 32px, 600);
+        }
+    }
+}
+
+.tabs-btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-bottom: 16px;
+
+    &__item {
+        @include fonts (14px, 24px, 400);
+
+        color: $bluePrimary;
+        padding: 6px 24px;
+        border-radius: 7px;
+        border: 1px solid #e8e8e8;
+        margin-right: 8px;
+
+        &.active {
+            color: $blackPrimary;
+            border: 1px solid $blueLighter;
+            background-color: $blueLighter;
+        }
+    }
+}
+
+.main-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 100px;
+
+    &__item {
+        max-width: 330px;
+        width: 100%;
+        border-radius: 8px;
+        position: relative;
+
+        &.badge::before {
+            content: 'New';
+            display: block;
+            text-transform: uppercase;
+            background-color: #64bd38;
+            border-radius: 3px;
+            position: absolute;
+            left: 16px;
+            top: 294px;
+            padding: 0 4px;
+            font-size: 13px;
+            line-height: 20px;
+            color: $fullWhite;
+        }
+
+        &:hover {
+            box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+        }
+
+        &:hover .main-cards__points {
+            color: $textRed;
+            transition: color 0.3s ease;
+        }
+
+        .main-cards-info {
+            padding: 16px;
+
+            .main-cards__points {
+                @include fonts (24px, 36px, 600);
+
+                color: $bluePrimary;
+                margin-bottom: 8px;
+            }
+
+            .main-cards__title {
+                color: $blackPrimary;
+
+                @include fonts (16px, 24px, 600);
+
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin-bottom: 4px;
+            }
+
+            .main-cards__size {
+                @include fonts (14px, 24px, 400);
+
+                color: $textGray;
+            }
+
+            .main-cards-btn {
+                @include fonts (16px, 24px, 400);
+
+                color: $fullWhite;
+                width: 100%;
+                background-color: $bluePrimary;
+                padding: 10px 0;
+                border-radius: 8px;
+                margin-top: 16px;
+                transition: all 0.5s ease;
+                opacity: 0;
+                visibility: hidden;
+
+                &:hover {
+                    background-color: #2c69aa;
+                    transition: background-color 0.5s ease;
+                }
+            }
+        }
+
+        &:hover .main-cards-btn {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.5s ease;
+        }
+    }
+}

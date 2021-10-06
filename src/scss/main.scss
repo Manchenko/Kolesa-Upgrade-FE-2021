@@ -1,0 +1,18 @@
+@import 'vars';
+@import 'reset';
+@import 'mixin';
+@import 'aside';
+@import 'mainContent';
+@import 'footer';
+@import 'modal';
+
+.container {
+    max-width: 1383px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.main {
+    padding: 34px 0 0 0;
+}

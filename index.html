@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/reset.css" />
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="./src/scss/main.scss">
     <title>Kolesa</title>
 </head>
 
@@ -102,13 +101,13 @@
                         </a>
                     </div>
                     <div class="tabs-btns">
-                        <button class="tabs-btns--item active" type="button">
+                        <button class="tabs-btns__item active" type="button">
                             Все товары
                         </button>
-                        <button class="tabs-btns--item" type="button">
+                        <button class="tabs-btns__item" type="button">
                             Одежда
                         </button>
-                        <button class="tabs-btns--item" type="button">
+                        <button class="tabs-btns__item" type="button">
                             Аксессуары
                         </button>
                     </div>
@@ -274,7 +273,7 @@
                 </div>
                 <div class="modal__description">
                     <h1 class="modal__title">Футболка "Эволюционируй или сдохни"</h1>
-                    <form action="#" method="GET" class="modal__form">
+                    <form class="modal__form" action="#" method="GET">
                         <div class="modal__sell">
                             <div class="modal__scores">
                                 <h6 class="modal__score">100 баллов</h6>

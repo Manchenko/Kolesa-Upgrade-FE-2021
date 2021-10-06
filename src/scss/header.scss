@@ -1,22 +1,9 @@
-.app {
-    min-height: 100vh;
-    display: grid;
-    grid-template: minmax(104px, auto) 1fr minmax(100px, auto) / 1fr;
-    grid-template-areas: 'header' 'main' 'footer';
-}
-
 .header {
     display: grid;
     grid-area: header;
-    grid-template: 1fr / 1fr minmax(215px, 281px) minmax(auto, 1038px) 1fr;
+    grid-template: 1fr / 1fr minmax(auto, 281px) minmax(auto, 1038px) 1fr;
     padding: 32px 24px 24px;
     align-items: center;
-
-    &__mobile-left {
-        grid-column: 2 / 3;
-        display: flex;
-        align-items: center;
-    }
 
     &__logo {
         display: none;
@@ -25,93 +12,15 @@
     &__right {
         display: flex;
         justify-content: end;
-    }
-}
 
-.mobile {
-    &__burger {
-        margin-right: 24px;
-    }
-}
-
-.search {
-    display: flex;
-    align-items: center;
-
-    &__input {
-        @include br(8px);
-
-        width: 0;
-        height: 44px;
-        padding-left: 10px;
-        background-color: $search;
-        grid-column: 3 / 4;
-        font-size: 18px;
-        transition: box-shadow ease 0.5s;
-        opacity: 0;
-
-        &.active {
-            width: 200px;
-            opacity: 1;
-            transition: width 0.3s ease;
+        &-account {
+            display: none;
         }
-
-        &:focus {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-            background: $white;
-        }
-    }
-
-    &__btn {
-        background: url('../assets/search-big.svg') no-repeat center center;
-        width: 44px;
-        height: 24px;
-        left: 16px;
-        top: 10px;
-        z-index: 5;
-        transition: transform ease 0.5s;
-    }
-
-    &__btn:active {
-        transform: scale(2, 2);
-    }
-}
-
-.account {
-    display: flex;
-    max-width: 146px;
-    justify-content: space-between;
-
-    &__image {
-        border-radius: 50%;
-        width: 44px;
-        height: 44px;
-    }
-}
-
-.header__right-account {
-    display: none;
-}
-
-.description {
-    margin-left: 16px;
-
-    &__name {
-        color: $blue;
-        font-weight: 600;
-    }
-
-    &__text {
-        color: $dark;
     }
 }
 
 @media (min-width: 768px) {
     .header {
-        &__mobile-left {
-            display: none;
-        }
-
         &__logo {
             grid-column: 2 / 3;
             display: block;
@@ -119,10 +28,6 @@
 
         &__right {
             justify-content: space-between;
-        }
-
-        &__right-account {
-            display: block;
         }
     }
 }

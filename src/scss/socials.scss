@@ -1,0 +1,11 @@
+.socials {
+    margin-top: 8px;
+
+    &__icon {
+        transition: transform ease 0.5s;
+
+        &:hover {
+            transform: scale(1.5, 1.5);
+        }
+    }
+}

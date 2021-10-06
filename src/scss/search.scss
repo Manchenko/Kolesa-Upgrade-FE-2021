@@ -1,0 +1,42 @@
+.search {
+    display: flex;
+    align-items: center;
+
+    &__input {
+        @include br(8px);
+
+        width: 0;
+        height: 44px;
+        padding-left: 10px;
+        background-color: $search;
+        grid-column: 3 / 4;
+        font-size: 18px;
+        transition: box-shadow ease 0.5s;
+        opacity: 0;
+
+        &.active {
+            width: 200px;
+            opacity: 1;
+            transition: width 0.3s ease;
+        }
+
+        &:focus {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            background: $white-color;
+        }
+    }
+
+    &__btn {
+        background: url('../assets/search-big.svg') no-repeat center center;
+        width: 44px;
+        height: 24px;
+        left: 16px;
+        top: 10px;
+        z-index: 5;
+        transition: transform ease 0.5s;
+    }
+
+    &__btn:active {
+        transform: scale(2, 2);
+    }
+}

@@ -1,79 +1,212 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Главная страница</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
-  </head>
-  <body>
-    <div id="app">
-        <div class="modal-window-wrap" id="modal-window-wrap">
-            <div class="modal-wrapper">
-                <button class="close-btn"></button>
-                <div class="modal-wrapper__images">
-                    <img src="src/assets/image.png" alt="Футболка Эволюционируй или сдохни">
-                    <div class="images-wrap images">
-                        <img src="src/assets/image-1.png" alt="Футболка Эволюционируй или сдохни 01" class="images__item">
-                        <img src="src/assets/image-2.png" alt="Футболка Эволюционируй или сдохни 02" class="images__item active">
-                        <img src="src/assets/image-3.png" alt="Футболка Эволюционируй или сдохни 03" class="images__item">
+</head>
+
+<body>
+    <div id="app" class="global-wrapper">
+        <header class="header">
+            <div class="header__logo-wrap">
+                <a href="#" class="header__logo">
+                    <img src="src/assets/Kolesagroup.svg" alt="Kolesagroup логотип">
+                </a>
+            </div>
+            <div class="header__search search">
+                <form action="" class="search__form">
+                    <button type="submit" title="Поиск" class="search__form-btn"></button>
+                    <input type="text" class="search__form-input" placeholder="Поиск">
+                </form>
+            </div>
+            <div class="header__account-wrap">
+                <a href="#" class="header__account">
+                    <img src="src/assets/rick.png" alt="Картинка Рика" class="user-image">
+                    <span class="header__user-desc">
+                        <span class="header__user-name">Мортиджан</span>
+                        <span class="header__user-text">300 баллов</span>
+                    </span>
+                </a>
+            </div>
+        </header>
+        <main class="main">
+            <aside class="sidebar">
+                <nav class="sidebar__menu">
+                    <ul class="sidebar__list">
+                        <li>
+                            <a href="#" class="sidebar__link">Оргсхема</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link">Kolesa <span>Team</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link active">Kolesa <span>Shop</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link">Картина компании</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link">Education</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link">Guidelines</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link">Библиотека</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar__link">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="content">
+                <div class="content__image image">
+                    <img src="src/assets/banner.jpg" alt="Футболка Эволюционируй или сдохни" class="image__item">
+                </div>
+                <div class="content__questions questions">
+                    <button type="button" class="questions__item questions__item_take">Получить баллы</button>
+                    <button type="button" class="questions__item questions__item_how">Как получить баллы</button>
+                    <button type="button" class="questions__item questions__item_present">Подарить баллы</button>
+                </div>
+                <div class="content__tabs tabs">
+                    <div class="tabs__items">
+                        <button type="button" class="tabs__item active">Все товары</button>
+                        <button type="button" class="tabs__item">Одежда</button>
+                        <button type="button" class="tabs__item">Аксессуары</button>
                     </div>
                 </div>
-                <div class="modal-wrapper__desc">
-                    <h3 class="modal-wrapper__title">Футболка "Эволюционируй или сдохни"</h3>
-                    <div class="modal-wrapper__blocks scores">
-                        <div class="scores__left">
-                            <h4 class="scores__left-title">100 баллов</h4>
-                            <button class="scores__btn">Попросить 50 баллов</button>
-                        </div>
-                        <div class="scores__right">
-                            <p class="scores__right-title">Твой баланс:</p>
-                            <p class="scores__right-text">50 баллов</p>
-                        </div>
-                    </div>
-                    <div class="modal-wrapper__blocks colors">
-                        <h5 class="colors__title">Цвета:</h5>
-                        <div class="colors__items">
-                            <input type="radio" class="colors__item" id="radio-1" name="colors">
-                            <label for="radio-1" class="colors__label colors__blue">Синий</label>
-
-                            <input type="radio" class="colors__item" id="radio-2" name="colors">
-                            <label for="radio-2" class="colors__label colors__beige">Бежевый</label>
-
-                            <input type="radio" class="colors__item" id="radio-3" name="colors">
-                            <label for="radio-3" class="colors__label colors__grey">Серый</label>
+                <div class="content__products products">
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__image">
+                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                                <span class="products__label">New</span>
+                            </div>
+                            <div class="products__desc">
+                                <h3 class="products__ball">220 баллов</h3>
+                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="products__sizes">Размеры S/M/L </p>
+                                <button type="button" class="products__btn">Заказать</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="modal-wrapper__blocks sizes">
-                        <h5 class="sizes__title">Размер:</h5>
-                        <div class="size__items">
-                            <input type="radio" class="size__input" id="size-1" name="size">
-                            <label for="size-1" class="size__label">S</label>
-
-                            <input type="radio" class="size__input" id="size-2" name="size">
-                            <label for="size-2" class="size__label">M</label>
-
-                            <input type="radio" class="size__input" id="size-3" name="size">
-                            <label for="size-3" class="size__label">L</label>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__image">
+                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                                <span class="products__label">New</span>
+                            </div>
+                            <div class="products__desc">
+                                <h3 class="products__ball">220 баллов</h3>
+                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="products__sizes">Размеры S/M/L </p>
+                                <button type="button" class="products__btn">Заказать</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="modal-wrapper__blocks details">
-                        <h5 class="details__title">Детали:</h5>
-                        <p>Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</p>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__image">
+                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                            </div>
+                            <div class="products__desc">
+                                <h3 class="products__ball">220 баллов</h3>
+                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="products__sizes">Размеры S/M/L </p>
+                                <button type="button" class="products__btn">Заказать</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-wrapper__blocks question">
-                        <h5 class="question__title">Как выбрать размер:</h5>
-                        <p>Написать дяде Рику для уточнения.</p>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__image">
+                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                            </div>
+                            <div class="products__desc">
+                                <h3 class="products__ball">220 баллов</h3>
+                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="products__sizes">Размеры S/M/L </p>
+                                <button type="button" class="products__btn">Заказать</button>
+                            </div>
+                        </div>
                     </div>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__image">
+                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                            </div>
+                            <div class="products__desc">
+                                <h3 class="products__ball">220 баллов</h3>
+                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="products__sizes">Размеры S/M/L </p>
+                                <button type="button" class="products__btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__image">
+                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                            </div>
+                            <div class="products__desc">
+                                <h3 class="products__ball">220 баллов</h3>
+                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="products__sizes">Размеры S/M/L </p>
+                                <button type="button" class="products__btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__item-content">
+                            <div class="products__image">
+                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                            </div>
+                            <div class="products__desc">
+                                <h3 class="products__ball">220 баллов</h3>
+                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="products__sizes">Размеры S/M/L </p>
+                                <button type="button" class="products__btn">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__left-side">
+                <p class="footer__copy">© Kolesa Group</p>
+                <div class="footer__socials socials">
+                    <a href="https://www.instagram.com/" rel="nofollow noopener noreferrer" target="_blank" class="socials__item">
+                        <img src="src/assets/Instagram.svg" alt="instagram" class="socials__item-icon">
+                    </a>
+                    <a href="https://www.youtube.com/" rel="nofollow noopener noreferrer" target="_blank" class="socials__item">
+                        <img src="src/assets/YouTube.svg" alt="youtube" class="socials__item-icon">
+                    </a>
+                    <a href="https://www.vk.com/" rel="nofollow noopener noreferrer" target="_blank" class="socials__item">
+                        <img src="src/assets/VK.svg" alt="vkontakte" class="socials__item-icon">
+                    </a>
                 </div>
             </div>
-        </div>
-
+            <div class="footer__desc">
+                <p class="footer__desc-item">Есть идеи что улучшить? </p>
+                <p class="footer__desc-item">Не знаешь, с кем решить проблему?</p>
+            </div>
+            <div class="footer__btn">
+                <button type="button" class="footer__button">Написать</button>
+            </div>
+        </footer>
     </div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+    <script src="main.js"></script>
+</body>
+
 </html>

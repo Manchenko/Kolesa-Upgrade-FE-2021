@@ -1,13 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="src/style/css/style.css"> -->
+    <link rel="stylesheet" href="src/style/css/style.css">
     <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo-and-search">
+            <div class="header-logo">
+                <img src="src/assets/Vector.png" alt="logo">
+            </div>
+            <div class="header-search">
+                <i class="header-icon"><img src="src/assets/search.svg" alt=""></i>
+                <input type="text" placeholder="Поиск">
+            </div>
+        </div>
+        <div class="header-user">
+            <div class="header-user__avatar">
+                <img src="src/assets/user.png" alt="user-avatar">
+            </div>
+            <div class="header-user__info">
+                <span class="header-user__name">Мортиджан</span>
+                <span class="header-user__points">300 баллов</span>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <aside>
+            <nav class="main-nav nav">
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a href="#">Оргсхема</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="# ">Kolesa <span class="bold ">Team</span></a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="#">Kolesa Shop</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="# ">Картина компании</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="#">Новости</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="# ">Education</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="#">Guidelines</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="# ">Библиотека</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="#">FAQ</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </aside>
+        <div class="main-cards">
+            <div class="main-promo">
+                <div class="main-img__promo">
+                    <img src="src/assets/Rectangle 54 (1).png" alt="promo" width="1038" height="335" class=" main-img__promoimgs promo-img">
+                    <img src="src/assets/rucksuck.svg" alt="" class="first-img main-img__promoimgs">
+                    <img src="src/assets/coat.svg" alt="кофта черная" class="second-img main-img__promoimgs">
+                    <img src="src/assets/4 1.svg" alt="кофта серая" class="third-img main-img__promoimgs">
+                    <img src="src/assets/4 2.png" alt="кофта серая" class="fourth-img main-img__promoimgs">
+                    <img src="src/assets/bagruck.svg" alt="рюкзак" class="fifth-img main-img__promoimgs" width="285" height="287">
+                    <img src="src/assets/bag.svg" alt="bag" width="39" height="36" class="bag-img main-img__promoimgs">
+                </div>
+                <div class="main-sale">
+                    <h2 class="main-promo__text">Летняя распродажа -50%</h2>
+                    <span class="main-deadline">Дедлайн: понедельник, 10:00</span>
+                </div>
+            </div>
+
+            <div class="main-grades">
+                <div class="main-grade">
+                    <img src="src/assets/➕.svg" alt=""> Получить баллы
+                </div>
+                <div class="main-grade">
+                    <img src="src/assets/❓.svg" alt=""> Как получить баллы
+                </div>
+                <div class="main-grade">
+                    <img src="src/assets/🎁.svg" alt=""> Подарить баллы
+                </div>
+            </div>
+
+            <div class="main-sorting__btns">
+                <button class="all-products main-sorting-btn">
+                    Все товары
+                </button>
+                <button class="clothes main-sorting-btn">
+                    Все товары
+                </button>
+                <button class="access main-sorting-btn">
+                    Аксессуары
+                </button>
+            </div>
+
+            <div class="main-products">
+                <div class="main-card">
+
+                    <div class="main-image__block">
+                        <img class="main-image" alt="Футболка Эволюцианируй или сдохни " src="src/assets/image 4.png" width="330" height="330">
+                        <span class="badge">new</span>
+                    </div>
+                    <div class="main-image__description ">
+                        <div class="main-price ">
+                            220 баллов
+                        </div>
+                        <h3 class="main-image__title ">
+                            Футболка "Эволюцианируй или сдохни "
+                        </h3>
+                        <div class="main-image__hint ">
+                            Размеры S/M/L
+                        </div>
+                        <button class="main-image__button " type="button ">
+                    Заказать
+                </button>
+                    </div>
+                </div>
+                <div class="main-card">
+
+                    <div class="main-image__block">
+                        <img class="main-image" alt="Футболка Эволюцианируй или сдохни " src="src/assets/image 4.png" width="330" height="330">
+                        <span class="badge">new</span>
+                    </div>
+                    <div class="main-image__description ">
+                        <div class="main-
+                        main-price ">
+                            220 баллов
+                        </div>
+                        <h3 class="main-image__title ">
+                            Футболка "Эволюцианируй или сдохни "
+                        </h3>
+                        <div class="main-image__hint ">
+                            Размеры S/M/L
+                        </div>
+                        <button class="main-image__button " type="button ">
+                    Заказать
+                </button>
+                    </div>
+                </div>
+                <div class="main-card">
+
+                    <div class="main-image__block">
+                        <img class="main-image" alt="Футболка Эволюцианируй или сдохни " src="src/assets/image 4.png" width="330" height="330">
+                        <span class="badge">new</span>
+                    </div>
+                    <div class="main-image__description ">
+                        <div class="main-price ">
+                            220 баллов
+                        </div>
+                        <h3 class="main-image__title ">
+                            Футболка "Эволюцианируй или сдохни "
+                        </h3>
+                        <div class="main-image__hint ">
+                            Размеры S/M/L
+                        </div>
+                        <button class="main-image__button " type="button ">
+                    Заказать
+                </button>
+                    </div>
+                </div>
+                <div class="main-card">
+
+                    <div class="main-image__block">
+                        <img class="main-image" alt="Футболка Эволюцианируй или сдохни " src="src/assets/image 4.png" width="330" height="330">
+                        <span class="badge">new</span>
+                    </div>
+                    <div class="main-image__description ">
+                        <div class="main-price ">
+                            220 баллов
+                        </div>
+                        <h3 class="main-image__title ">
+                            Футболка "Эволюцианируй или сдохни "
+                        </h3>
+                        <div class="main-image__hint ">
+                            Размеры S/M/L
+                        </div>
+                        <button class="main-image__button " type="button ">
+                    Заказать
+                </button>
+                    </div>
+                </div>
+                <div class="main-card">
+
+                    <div class="main-image__block">
+                        <img class="main-image" alt="Футболка Эволюцианируй или сдохни " src="src/assets/image 4.png" width="330" height="330">
+                        <span class="badge">new</span>
+                    </div>
+                    <div class="main-image__description ">
+                        <div class="main-price ">
+                            220 баллов
+                        </div>
+                        <h3 class="main-image__title ">
+                            Футболка "Эволюцианируй или сдохни "
+                        </h3>
+                        <div class="main-image__hint ">
+                            Размеры S/M/L
+                        </div>
+                        <button class="main-image__button " type="button ">
+                    Заказать
+                </button>
+                    </div>
+                </div>
+                <div class="main-card">
+
+                    <div class="main-image__block">
+                        <img class="main-image" alt="Футболка Эволюцианируй или сдохни " src="src/assets/image 4.png" width="330" height="330">
+                        <span class="badge">new</span>
+                    </div>
+                    <div class="main-image__description ">
+                        <div class="main-price ">
+                            220 баллов
+                        </div>
+                        <h3 class="main-image__title ">
+                            Футболка "Эволюцианируй или сдохни "
+                        </h3>
+                        <div class="main-image__hint ">
+                            Размеры S/M/L
+                        </div>
+                        <button class="main-image__button " type="button ">
+                    Заказать
+                </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-block block1">
+            <div class="footer-company-name">© Kolesa Group</div>
+            <div class="footer-icons">
+                <a href="#" class="footer-icon"><img src="src/assets/insta-icon.svg" alt=""></a>
+                <a href="#" class="footer-icon"><img src="src/assets/youtube.svg" alt=""></a>
+                <a href="#" class="footer-icon"><img src="src/assets/vk.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-block2 block">
+            <div class="footer-info">
+                <span class="offers">Есть идеи что улучшить? <br>Не знаешь, с кем решить проблему? </span>
+            </div>
+            <div class="footer-writeus">
+                <button class="footer-write__button">Написать</button>
+            </div>
+        </div>
+    </footer>
+    <script type="module " src="/src/js/main.js "></script>
+</body>
+
 </html>

@@ -1,9 +1,7 @@
-@import 'vars';
-
 // footer
 
 .footer {
-    background-color: var(--mainColorBlack);
+    background-color: $blackPrimary;
 
     &__inner {
         display: flex;

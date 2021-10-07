@@ -1,13 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/src/scss/main.scss" />
+        <title>Vite App</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <main class="main">
+                    <aside class="aside">
+                        <nav class="nav">
+                            <a href="#"><img class="logo" src="/img/logo.svg" alt="Логотип Колеса Групп"></a>
+                            <ul class="nav__menu">
+                                <li class="nav__list">
+                                    <a class="nav__link" href="#">
+                                        Оргсхема
+                                    </a>
+                                </li>
+                                <li class="nav__list">
+                                    <a class="nav__link" href="#">
+                                        Kolesa Team
+                                    </a>
+                                </li>
+                                <li class="nav__list">
+                                    <a class="nav__link active" href="#">
+                                        Kolesa Shop
+                                    </a>
+                                </li>
+                                <li class="nav__list">
+                                    <a class="nav__link" href="#">
+                                        Новости
+                                    </a>
+                                </li>
+                                <li class="nav__list">
+                                    <a class="nav__link" href="#">
+                                        Education
+                                    </a>
+                                </li>
+                                <li class="nav__list">
+                                    <a class="nav__link" href="#">
+                                        Guidelines
+                                    </a>
+                                </li>
+                                <li class="nav__list">
+                                    <a class="nav__link" href="#">
+                                        Библиотека
+                                    </a>
+                                </li>
+                                <li class="nav__list">
+                                    <a class="nav__link" href="#">
+                                        FAQ
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <section class="main-content">
+                        <div class="main-content__header">
+                            <div class="search">
+                                <button class="search__button" type="button">
+                                    <img src="/img/search.svg" alt="Иконка поиска">
+                                </button>
+                                <input class="search__input" type="text" placeholder="Поиск">
+                            </div>
+                            <a class="user">
+                                <div class="user__avatar">
+                                    <img
+                                        src="/img/profile-photo.png"
+                                        alt="avatar"
+                                        width="44"
+                                        height="44"
+                                    >
+                                </div>
+                                <div class="user__info">
+                                    <span class="user__name">Мортиджан</span>
+                                    <span class="user__point">300 баллов</span>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="banner" href="#">
+                            <img src="/img/banner.jpeg" alt="Баннер летней распродажи">
+                        </a>
+                        <div class="point-btns">
+                            <a class="point-btns__item" style="background-color: #eff8eb;">
+                                <img class="point-btns__img" src="/img/plus-points.svg" alt="Получить баллы">
+                                <span class="point-btns__text">Получить баллы</span>
+                            </a>
+                            <a class="point-btns__item" style="background-color: #e9f2fb;">
+                                <img class="point-btns__img" src="/img/question-points.svg" alt="Как получить баллы">
+                                <span class="point-btns__text">Как получить баллы</span>
+                            </a>
+                            <a class="point-btns__item" style="background-color: #fffae7;">
+                                <img class="point-btns__img" src="/img/gift-points.svg" alt=" Подарить баллы">
+                                <span class="point-btns__text">Подарить баллы</span>
+                            </a>
+                        </div>
+                        <div class="tabs-btns">
+                            <button class="tabs-btns--item active" type="button">
+                                Все товары
+                            </button>
+                            <button class="tabs-btns--item" type="button">
+                                Одежда
+                            </button>
+                            <button class="tabs-btns--item" type="button">
+                                Аксессуары
+                            </button>
+                        </div>
+                        <div class="main-cards">
+                            <div class="main-cards__item badge">
+                                <img class="main-cards__img" src="/img/t-shirt.png" alt="Футболка 'Эволюционируй или сдохни' ">
+                                <div class="main-cards-info">
+                                    <h6 class="main-cards__points">220 баллов</h6>
+                                    <p class="main-cards__title">Футболка "Эволюционируй или сдохни"</p>
+                                    <p class="main-cards__size">Размеры S/M/L </p>
+                                    <button class="main-cards-btn" type="button">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="main-cards__item badge">
+                                <img class="main-cards__img" src="/img/t-shirt.png" alt="Футболка 'Эволюционируй или сдохни'">
+                                <div class="main-cards-info">
+                                    <h6 class="main-cards__points">220 баллов</h6>
+                                    <p class="main-cards__title">Футболка "Эволюционируй или сдохни"</p>
+                                    <p class="main-cards__size">Размеры S/M/L </p>
+                                    <button class="main-cards-btn" type="button">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="main-cards__item">
+                                <img class="main-cards__img" src="/img/t-shirt.png" alt="Футболка 'Эволюционируй или сдохни'">
+                                <div class="main-cards-info">
+                                    <h6 class="main-cards__points">220 баллов</h6>
+                                    <p class="main-cards__title">Футболка "Эволюционируй или сдохни"</p>
+                                    <p class="main-cards__size">Размеры S/M/L </p>
+                                    <button class="main-cards-btn" type="button">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="main-cards__item">
+                                <img class="main-cards__img" src="/img/t-shirt.png" alt="Футболка 'Эволюционируй или сдохни'">
+                                <div class="main-cards-info">
+                                    <h6 class="main-cards__points">220 баллов</h6>
+                                    <p class="main-cards__title">Футболка "Эволюционируй или сдохни"</p>
+                                    <p class="main-cards__size">Размеры S/M/L </p>
+                                    <button class="main-cards-btn" type="button">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="main-cards__item">
+                                <img class="main-cards__img" src="/img/t-shirt.png" alt="Футболка 'Эволюционируй или сдохни'">
+                                <div class="main-cards-info">
+                                    <h6 class="main-cards__points">220 баллов</h6>
+                                    <p class="main-cards__title">Футболка "Эволюционируй или сдохни"</p>
+                                    <p class="main-cards__size">Размеры S/M/L </p>
+                                    <button class="main-cards-btn" type="button">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="main-cards__item">
+                                <img class="main-cards__img" src="/img/t-shirt.png" alt="Футболка 'Эволюционируй или сдохни'">
+                                <div class="main-cards-info">
+                                    <h6 class="main-cards__points">220 баллов</h6>
+                                    <p class="main-cards__title">Футболка "Эволюционируй или сдохни"</p>
+                                    <p class="main-cards__size">Размеры S/M/L </p>
+                                    <button class="main-cards-btn" type="button">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="main-cards__item">
+                                <img class="main-cards__img" src="/img/t-shirt.png" alt="Футболка 'Эволюционируй или сдохни'">
+                                <div class="main-cards-info">
+                                    <h6 class="main-cards__points">220 баллов</h6>
+                                    <p class="main-cards__title">Футболка "Эволюционируй или сдохни"</p>
+                                    <p class="main-cards__size">Размеры S/M/L </p>
+                                    <button class="main-cards-btn" type="button">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="main-cards__item">
+                                <img class="main-cards__img" src="/img/t-shirt.png" alt="Футболка 'Эволюционируй или сдохни'">
+                                <div class="main-cards-info">
+                                    <h6 class="main-cards__points">220 баллов</h6>
+                                    <p class="main-cards__title">Футболка "Эволюционируй или сдохни"</p>
+                                    <p class="main-cards__size">Размеры S/M/L </p>
+                                    <button class="main-cards-btn" type="button">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="main-cards__item">
+                                <img class="main-cards__img" src="/img/t-shirt.png" alt="Футболка 'Эволюционируй или сдохни'">
+                                <div class="main-cards-info">
+                                    <h6 class="main-cards__points">220 баллов</h6>
+                                    <p class="main-cards__title">Футболка "Эволюционируй или сдохни"</p>
+                                    <p class="main-cards__size">Размеры S/M/L </p>
+                                    <button class="main-cards-btn" type="button">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="main-cards__item">
+                                <img class="main-cards__img" src="/img/t-shirt.png" alt="Футболка 'Эволюционируй или сдохни'">
+                                <div class="main-cards-info">
+                                    <h6 class="main-cards__points">220 баллов</h6>
+                                    <p class="main-cards__title">Футболка "Эволюционируй или сдохни"</p>
+                                    <p class="main-cards__size">Размеры S/M/L </p>
+                                    <button class="main-cards-btn" type="button">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="main-cards__item">
+                                <img class="main-cards__img" src="/img/t-shirt.png" alt="Футболка 'Эволюционируй или сдохни'">
+                                <div class="main-cards-info">
+                                    <h6 class="main-cards__points">220 баллов</h6>
+                                    <p class="main-cards__title">Футболка "Эволюционируй или сдохни"</p>
+                                    <p class="main-cards__size">Размеры S/M/L </p>
+                                    <button class="main-cards-btn" type="button">Заказать</button>
+                                </div>
+                            </div>
+                            <div class="main-cards__item">
+                                <img class="main-cards__img" src="/img/t-shirt.png" alt="Футболка 'Эволюционируй или сдохни'">
+                                <div class="main-cards-info">
+                                    <h6 class="main-cards__points">220 баллов</h6>
+                                    <p class="main-cards__title">Футболка "Эволюционируй или сдохни"</p>
+                                    <p class="main-cards__size">Размеры S/M/L </p>
+                                    <button class="main-cards-btn" type="button">Заказать</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__left">
+                            <p class="copyright">© Kolesa Group</p>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a href="#">
+                                        <img src="/img/inst.svg" alt="Инстаграм">
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#">
+                                        <img class="social__youtube" src="/img/youtub.svg" alt="Ютуб">
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#">
+                                        <img src="/img/VK.svg" alt="Вконтакте">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__right">
+                            <p class="footer__text">Есть идеи что улучшить? <br> Не знаешь, с кем решить проблему?</p>
+                            <button class="footer__btn" type="button">
+                                Написать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="modal" style="display: none;">
+
+                <!-- Модалка -->
+                <div class="popup">
+                    <div class="popup__body">
+                        <div class="popup__photo">
+                            <img
+                                src="/img/main-photo.png"
+                                alt="Классная футболка! Эволюционируй или сдохни"
+                            />
+                            <div class="popup__gallery">
+                                <img
+                                    src="/img/small-first.png"
+                                    alt="Белый свитшот"
+                                />
+                                <img
+                                    class="active"
+                                    src="/img/small-third.png"
+                                    alt="Эволюционируй или сдохни"
+                                />
+                                <img
+                                    src="/img/small-second.png"
+                                    alt="Серый свитшот"
+                                />
+                            </div>
+                        </div>
+                        <div class="popup__description">
+                            <h1 class="popup__title">Футболка "Эволюционируй или сдохни"</h1>
+
+                                <div class="popup__balance-info">
+                                    <div class="popup__points">
+                                        <h6 class="popup__point">100 баллов</h6>
+                                        <button class="btn" type="submit">
+                                            Заказать
+                                        </button>
+                                    </div>
+                                    <div class="popup__balance">
+                                        <p class="popup__balance-my">Твой баланс:</p>
+                                        <p class="popup__balance-point">3 945 баллов</p>
+                                        <img
+                                            class="popup__balance-shop"
+                                            src="/img/shop.png"
+                                            alt="Баланс"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="popup__option-colors">
+                                    <h6 class="popup__option-title">Цвета:</h6>
+                                    <div class="popup__option-btns">
+                                        <input
+                                            class="popup__option"
+                                            type="radio"
+                                            name="popup__color"
+                                            id="popup__color-blue"
+                                        />
+                                        <label
+                                            class="popup__color-lable"
+                                            for="popup__color-blue"
+                                        >
+                                            <div
+                                                class="popup__color-container blue"
+                                            ></div>
+                                            <span>Синий</span>
+                                        </label>
+                                        <input
+                                            class="popup__option"
+                                            type="radio"
+                                            name="popup__color"
+                                            id="popup__color-beige"
+                                        />
+                                        <label
+                                            class="popup__color-lable"
+                                            for="popup__color-beige"
+                                        >
+                                            <div
+                                                class="popup__color-container beige"
+                                            ></div>
+                                            <span>Бежевый</span>
+                                        </label>
+                                        <input class="popup__option" type="radio" name="popup__color" id="popup__color-gray">
+                                    <label class="popup__color-lable" for="popup__color-gray">
+                                        <div class="popup__color-container grey" ></div>
+                                        <span>Серый</span>
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="popup__option-size">
+                                    <h6 class="popup__option-title">Размер:</h6>
+                                    <div class="popup__option-btns">
+                                        <input
+                                            class="popup__option"
+                                            type="radio"
+                                            name="popup__size"
+                                            id="popup__size-s"
+                                        />
+                                        <label class="popup__size-lable" for="popup__size-s">
+                                            <span>S</span>
+                                        </label>
+                                        <input
+                                            class="popup__option"
+                                            type="radio"
+                                            name="popup__size"
+                                            id="popup__size-m"
+                                        />
+                                        <label class="popup__size-lable" for="popup__size-m">
+                                            <span>M</span>
+                                        </label>
+                                        <input
+                                            class="popup__option"
+                                            type="radio"
+                                            name="popup__size"
+                                            id="popup__size-l"
+                                        />
+                                        <label class="popup__size-lable" for="popup__size-l">
+                                            <span>L</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="popup__info">
+                                    <h6 class="popup__info-title">Детали:</h6>
+                                    <p class="popup__info-text">
+                                        Брендированная толстовка от Qazaq Republic. Материал:
+                                        Хлопок 80%, Вискоза 20%
+                                    </p>
+                                    <h6 class="popup__info-title">Как выбрать размер:</h6>
+                                    <p class="popup__info-text">
+                                        Написать дяде Рику для уточнения.
+                                    </p>
+                                </div>
+                                <button class="popup__x" type="button">
+                                    <svg
+                                        width="32"
+                                        height="32"
+                                        viewBox="0 0 32 32"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"> <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M24.4372 6.66675L16.0012 15.1021L7.56404
+                                            6.66675L6.66663 7.56283L15.1025 15.9994L6.66663
+                                            24.4348L7.56404 25.3334L16.0012 16.8968L24.4372
+                                            25.3334L25.3333 24.4348L16.8974 15.9994L25.3333
+                                            7.56283L24.4372 6.66675Z"
+                                            fill="#888B94"/>
+                                    </svg>
+                                </button>
+                        </div>
+                    </div>
+                </div><!-- /Модалка -->
+            </div>
+        </div>
+      <script type="module" src="/src/js/main.js"></script>
+    </body>
 </html>

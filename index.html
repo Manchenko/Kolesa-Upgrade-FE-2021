@@ -82,9 +82,11 @@
             </aside>
             <section class="content">
                 <div class="content__image image">
-                    <img srcset="src/assets/banner-mob2.jpg 360w, src/assets/banner.jpg 800w"
-                    sizes="(max-width: 500px) 360px, 800px"
-                    src="src/assets/banner.jpg" class="image__item">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="src/assets/banner-mob2.jpg">
+                        <source media="(min-width: 768px)" srcset="src/assets/banner.jpg">
+                        <img src="src/assets/banner.jpg" class="image__item" alt="Горячее предложение">
+                    </picture>
                 </div>
                 <div class="content__questions questions">
                     <button type="button" class="questions__item questions__item--take">Получить баллы</button>
@@ -96,105 +98,7 @@
                     <button type="button" class="tabs__item">Одежда</button>
                     <button type="button" class="tabs__item">Аксессуары</button>
                 </div>
-                <div class="content__products">
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="content__products js-products">
                 </div>
             </section>
         </main>

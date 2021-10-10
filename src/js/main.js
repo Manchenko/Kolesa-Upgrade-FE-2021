@@ -45,7 +45,7 @@ const clothes = [
         img:   'src/assets/image13.jpg',
         alt:   'Толстовка "Kolesa Team"',
         title: 'Толстовка "Kolesa Team"',
-        price: 500,
+        price: 510,
         badge: false,
         size:  'S/M/L',
     },
@@ -54,7 +54,7 @@ const clothes = [
         img:   'src/assets/image14.jpg',
         alt:   'Толстовка "Kolesa Team"',
         title: 'Толстовка "Kolesa Team"',
-        price: 500,
+        price: 520,
         badge: false,
         size:  'S/M/L',
     },
@@ -63,7 +63,7 @@ const clothes = [
         img:   'src/assets/image17.png',
         alt:   'Толстовка "Kolesa Team"',
         title: 'Толстовка "Kolesa Team"',
-        price: 500,
+        price: 525,
         badge: false,
         size:  'S/M/L',
     },
@@ -85,7 +85,7 @@ const accessories = [
         alt:   'Рюкзак "Kolesa Team"',
         title: 'Рюкзак "Kolesa Team"',
         price: 400,
-        badge: false,
+        badge: true,
         size:  'S/M/L',
     },
     {
@@ -93,34 +93,34 @@ const accessories = [
         img:   'src/assets/image16.jpg',
         alt:   'Рюкзак "Kolesa Team"',
         title: 'Рюкзак "Kolesa Team"',
-        price: 400,
-        badge: false,
+        price: 390,
+        badge: true,
         size:  'S/M/L',
     },
     {
         id:    15,
         img:   'src/assets/image08.jpg',
-        alt:   'Рюкзак "Kolesa Team"',
-        title: 'Рюкзак "Kolesa Team"',
-        price: 400,
+        alt:   'Термо-кружка "Kolesa Team"',
+        title: 'Термо-кружка "Kolesa Team"',
+        price: 380,
         badge: false,
         size:  'S/M/L',
     },
     {
         id:    16,
         img:   'src/assets/image09.jpg',
-        alt:   'Рюкзак "Kolesa Team"',
-        title: 'Рюкзак "Kolesa Team"',
-        price: 400,
+        alt:   'Вязанная шапка "Kolesa Team"',
+        title: 'Вязанная шапка "Kolesa Team"',
+        price: 230,
         badge: false,
         size:  'S/M/L',
     },
     {
         id:    17,
         img:   'src/assets/image20.jpg',
-        alt:   'Рюкзак "Kolesa Team"',
-        title: 'Рюкзак "Kolesa Team"',
-        price: 400,
+        alt:   'Солнцезащитные очки',
+        title: 'Солнцезащитные очки',
+        price: 100,
         badge: false,
         size:  'S/M/L',
     },
@@ -128,7 +128,7 @@ const accessories = [
 
 const all = clothes.concat(accessories);
 
-const makeProductCard = (img, alt, title, price, badge, size) => ` <div class="content__product">
+const makeProductCard = (img, alt, title, price, badge, size, id) => ` <div data-id="${id}" class="content__product" >
         <div class="card">
             <div class="card__image">
                 <img src="${img}" alt="${alt}">
@@ -150,9 +150,9 @@ const renderCard = (item) => {
     wrapper.className = 'content__products';
     filterItem.forEach((card) => {
         const {
-            img, alt, title, price, badge, size,
+            img, alt, title, price, badge, size, id,
         } = card;
-        const cardHtml = makeProductCard(img, alt, title, price, badge, size);
+        const cardHtml = makeProductCard(img, alt, title, price, badge, size, id);
 
         wrapper.innerHTML += cardHtml;
 
@@ -167,7 +167,7 @@ document.querySelectorAll('.js-tabs-btn').forEach((button) => {
             button.classList.add('tabs__item--active');
         }
 
-        const categoryKey = button.getAttribute('data-id');
+        const categoryKey = button.getAttribute('data-type');
 
         if (categoryKey === 'all') {
             renderCard(all);
@@ -182,3 +182,31 @@ document.querySelectorAll('.js-tabs-btn').forEach((button) => {
 document.querySelector('.js-tabs-btn').click();
 
 // modal-window
+
+function openModal(id) {
+    let info;
+
+    all.forEach((item) => {
+        if (item.id === id) {
+            info = item;
+        }
+    });
+    document.querySelector('.scores__left-title').textContent = info.price;
+    document.querySelector('.modal-wrapper__title').textContent = info.title;
+    document.querySelector('.images__elem').src = info.img;
+    document.querySelector('.modal-main-wrap').classList.add('modal-main-wrap--active');
+}
+
+document.querySelectorAll('[data-id]').forEach((item) => {
+    item.addEventListener('click', () => {
+        openModal(item.dataset.id);
+    });
+});
+
+function closeModal() {
+    document.querySelector('.modal-main-wrap').classList.remove('modal-main-wrap--active');
+}
+
+document.querySelector('.modal-wrapper__btn').addEventListener('click', () => {
+    closeModal();
+});

@@ -22,7 +22,7 @@
             box-shadow: 0 0 10px rgba(28, 24, 25, 0.1);
         }
 
-        &.active {
+        &--active {
             background: $tabs;
             border: 1px solid $tabs;
             color: $main-color;

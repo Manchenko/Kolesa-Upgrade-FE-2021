@@ -1,0 +1,34 @@
+.account-wrap {
+    display: none;
+}
+
+.account {
+    display: flex;
+    max-width: 146px;
+    justify-content: space-between;
+
+    &__image {
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+    }
+
+    &__desc {
+        margin-left: 16px;
+    }
+
+    &__name {
+        color: $accent-color;
+        font-weight: 600;
+    }
+
+    &__text {
+        color: $main-color;
+    }
+}
+
+@media (min-width: 768px) {
+    .account-wrap {
+        display: block;
+    }
+}

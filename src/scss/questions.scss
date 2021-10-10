@@ -1,0 +1,78 @@
+.questions {
+    &__item {
+        @include br(16px);
+
+        width: 100%;
+        padding: 8px 24px;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+        border: 1px solid $white-color;
+        margin: 4px 0;
+        transition: all ease 0.5s;
+
+        &--take {
+            background: $btn-green;
+
+            &:hover {
+                border: 1px solid $btn-green;
+                box-shadow: 0 0 10px $btn-green;
+                background: transparent;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                background: url('../assets/plus.png') no-repeat center center;
+                width: 48px;
+                height: 56px;
+                margin-right: 16px;
+            }
+        }
+
+        &--how {
+            background: $btn-yellow;
+
+            &:hover {
+                border: 1px solid $btn-yellow;
+                box-shadow: 0 0 10px $btn-yellow;
+                background: transparent;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                background: url('../assets/question.png') no-repeat center center;
+                width: 48px;
+                height: 56px;
+                margin-right: 16px;
+            }
+        }
+
+        &--present {
+            background: $btn-blue;
+
+            &:hover {
+                border: 1px solid $btn-blue;
+                box-shadow: 0 0 10px $btn-blue;
+                background: transparent;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                background: url('../assets/present.png') no-repeat center center;
+                width: 48px;
+                height: 56px;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 723px) {
+    .questions__item {
+        max-width: 330px;
+    }
+}

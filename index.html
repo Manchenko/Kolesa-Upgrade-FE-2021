@@ -8,174 +8,190 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
-    <div id="app" class="global-wrapper">
+    <div id="app" class="app">
         <header class="header">
-            <div class="header__logo-wrap">
-                <a href="#" class="header__logo">
+            <div class="mobile">
+                <div class="mobile__burger">
+                    <a href="#" class="mobile__burger-item">
+                        <img src="src/assets/burger.svg" alt="Кнопка меню">
+                    </a>
+                </div>
+                <div class="mobile__logo">
+                    <a href="#" class="mobile__logo-item">
+                        <img src="src/assets/Kolesa-group-mob.svg" alt="Kolesagroup логотип мини">
+                    </a>
+                </div>
+            </div>
+            <div class="header__logo">
+                <a href="#" class="header__logo-item">
                     <img src="src/assets/Kolesagroup.svg" alt="Kolesagroup логотип">
                 </a>
             </div>
-            <div class="header__search search">
-                <form action="" class="search__form">
-                    <button type="submit" title="Поиск" class="search__form-btn"></button>
-                    <input type="text" class="search__form-input" placeholder="Поиск">
+            <div class="header__right">
+                <form action="" class="search">
+                    <input type="text" class="search__input" name="search" placeholder="Поиск">
+                    <button type="button" title="Поиск" id="btn" class="search__btn"></button>
                 </form>
-            </div>
-            <div class="header__account-wrap">
-                <a href="#" class="header__account">
-                    <img src="src/assets/rick.png" alt="Картинка Рика" class="user-image">
-                    <span class="header__user-desc">
-                        <span class="header__user-name">Мортиджан</span>
-                        <span class="header__user-text">300 баллов</span>
-                    </span>
-                </a>
+                <div class="account-wrap">
+                    <a href="#" class="account">
+                        <img src="src/assets/rick.png" alt="Картинка Рика" class="account__image">
+                        <span class="account__desc">
+                            <span class="account__name">Мортиджан</span>
+                            <span class="account__text">300 баллов</span>
+                        </span>
+                    </a>
+                </div>
             </div>
         </header>
         <main class="main">
             <aside class="sidebar">
-                <nav class="sidebar__menu">
-                    <ul class="sidebar__list">
-                        <li>
-                            <a href="#" class="sidebar__link">Оргсхема</a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Оргсхема</a>
                         </li>
-                        <li>
-                            <a href="#" class="sidebar__link">Kolesa <span>Team</span></a>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Kolesa <strong>Team</strong></a>
                         </li>
-                        <li>
-                            <a href="#" class="sidebar__link active">Kolesa <span>Shop</span></a>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link active">Kolesa <strong>Shop</strong></a>
                         </li>
-                        <li>
-                            <a href="#" class="sidebar__link">Картина компании</a>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Картина компании</a>
                         </li>
-                        <li>
-                            <a href="#" class="sidebar__link">Новости</a>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Новости</a>
                         </li>
-                        <li>
-                            <a href="#" class="sidebar__link">Education</a>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Education</a>
                         </li>
-                        <li>
-                            <a href="#" class="sidebar__link">Guidelines</a>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Guidelines</a>
                         </li>
-                        <li>
-                            <a href="#" class="sidebar__link">Библиотека</a>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Библиотека</a>
                         </li>
-                        <li>
-                            <a href="#" class="sidebar__link">FAQ</a>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">FAQ</a>
                         </li>
                     </ul>
                 </nav>
             </aside>
             <section class="content">
                 <div class="content__image image">
-                    <img src="src/assets/banner.jpg" alt="Футболка Эволюционируй или сдохни" class="image__item">
+                    <img srcset="src/assets/banner-mob2.jpg 360w, src/assets/banner.jpg 800w"
+                    sizes="(max-width: 500px) 360px, 800px"
+                    src="src/assets/banner.jpg" class="image__item">
                 </div>
                 <div class="content__questions questions">
-                    <button type="button" class="questions__item questions__item_take">Получить баллы</button>
-                    <button type="button" class="questions__item questions__item_how">Как получить баллы</button>
-                    <button type="button" class="questions__item questions__item_present">Подарить баллы</button>
+                    <button type="button" class="questions__item questions__item--take">Получить баллы</button>
+                    <button type="button" class="questions__item questions__item--how">Как получить баллы</button>
+                    <button type="button" class="questions__item questions__item--present">Подарить баллы</button>
                 </div>
                 <div class="content__tabs tabs">
-                    <div class="tabs__items">
-                        <button type="button" class="tabs__item active">Все товары</button>
-                        <button type="button" class="tabs__item">Одежда</button>
-                        <button type="button" class="tabs__item">Аксессуары</button>
-                    </div>
+                    <button type="button" class="tabs__item active">Все товары</button>
+                    <button type="button" class="tabs__item">Одежда</button>
+                    <button type="button" class="tabs__item">Аксессуары</button>
                 </div>
-                <div class="content__products products">
-                    <div class="products__item">
-                        <div class="products__item-content">
-                            <div class="products__image">
+                <div class="content__products">
+                    <div class="card-wrap">
+                        <div class="card">
+                            <div class="card__image">
                                 <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="products__label">New</span>
+                                <span class="card__label">New</span>
                             </div>
-                            <div class="products__desc">
-                                <h3 class="products__ball">220 баллов</h3>
-                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="products__sizes">Размеры S/M/L </p>
-                                <button type="button" class="products__btn">Заказать</button>
+                            <div class="card__desc">
+                                <h3 class="card__ball">220 баллов</h3>
+                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="card__sizes">Размеры S/M/L </p>
+                                <button type="button" class="card__btn">Заказать</button>
                             </div>
                         </div>
                     </div>
-                    <div class="products__item">
-                        <div class="products__item-content">
-                            <div class="products__image">
+                    <div class="card-wrap">
+                        <div class="card">
+                            <div class="card__image">
                                 <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="products__label">New</span>
+                                <span class="card__label">New</span>
                             </div>
-                            <div class="products__desc">
-                                <h3 class="products__ball">220 баллов</h3>
-                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="products__sizes">Размеры S/M/L </p>
-                                <button type="button" class="products__btn">Заказать</button>
+                            <div class="card__desc">
+                                <h3 class="card__ball">220 баллов</h3>
+                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="card__sizes">Размеры S/M/L </p>
+                                <button type="button" class="card__btn">Заказать</button>
                             </div>
                         </div>
                     </div>
-                    <div class="products__item">
-                        <div class="products__item-content">
-                            <div class="products__image">
+                    <div class="card-wrap">
+                        <div class="card">
+                            <div class="card__image">
                                 <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                                <span class="card__label">New</span>
                             </div>
-                            <div class="products__desc">
-                                <h3 class="products__ball">220 баллов</h3>
-                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="products__sizes">Размеры S/M/L </p>
-                                <button type="button" class="products__btn">Заказать</button>
+                            <div class="card__desc">
+                                <h3 class="card__ball">220 баллов</h3>
+                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="card__sizes">Размеры S/M/L </p>
+                                <button type="button" class="card__btn">Заказать</button>
                             </div>
                         </div>
                     </div>
-                    <div class="products__item">
-                        <div class="products__item-content">
-                            <div class="products__image">
+                    <div class="card-wrap">
+                        <div class="card">
+                            <div class="card__image">
                                 <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                                <span class="card__label">New</span>
                             </div>
-                            <div class="products__desc">
-                                <h3 class="products__ball">220 баллов</h3>
-                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="products__sizes">Размеры S/M/L </p>
-                                <button type="button" class="products__btn">Заказать</button>
+                            <div class="card__desc">
+                                <h3 class="card__ball">220 баллов</h3>
+                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="card__sizes">Размеры S/M/L </p>
+                                <button type="button" class="card__btn">Заказать</button>
                             </div>
                         </div>
                     </div>
-                    <div class="products__item">
-                        <div class="products__item-content">
-                            <div class="products__image">
+                    <div class="card-wrap">
+                        <div class="card">
+                            <div class="card__image">
                                 <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                                <span class="card__label">New</span>
                             </div>
-                            <div class="products__desc">
-                                <h3 class="products__ball">220 баллов</h3>
-                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="products__sizes">Размеры S/M/L </p>
-                                <button type="button" class="products__btn">Заказать</button>
+                            <div class="card__desc">
+                                <h3 class="card__ball">220 баллов</h3>
+                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="card__sizes">Размеры S/M/L </p>
+                                <button type="button" class="card__btn">Заказать</button>
                             </div>
                         </div>
                     </div>
-                    <div class="products__item">
-                        <div class="products__item-content">
-                            <div class="products__image">
+                    <div class="card-wrap">
+                        <div class="card">
+                            <div class="card__image">
                                 <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                                <span class="card__label">New</span>
                             </div>
-                            <div class="products__desc">
-                                <h3 class="products__ball">220 баллов</h3>
-                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="products__sizes">Размеры S/M/L </p>
-                                <button type="button" class="products__btn">Заказать</button>
+                            <div class="card__desc">
+                                <h3 class="card__ball">220 баллов</h3>
+                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="card__sizes">Размеры S/M/L </p>
+                                <button type="button" class="card__btn">Заказать</button>
                             </div>
                         </div>
                     </div>
-                    <div class="products__item">
-                        <div class="products__item-content">
-                            <div class="products__image">
+                    <div class="card-wrap">
+                        <div class="card">
+                            <div class="card__image">
                                 <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
+                                <span class="card__label">New</span>
                             </div>
-                            <div class="products__desc">
-                                <h3 class="products__ball">220 баллов</h3>
-                                <h4 class="products__name" title="Футболка Эволюционируй или сдохни">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="products__sizes">Размеры S/M/L </p>
-                                <button type="button" class="products__btn">Заказать</button>
+                            <div class="card__desc">
+                                <h3 class="card__ball">220 баллов</h3>
+                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="card__sizes">Размеры S/M/L </p>
+                                <button type="button" class="card__btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -183,30 +199,32 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="footer__left-side">
-                <p class="footer__copy">© Kolesa Group</p>
-                <div class="footer__socials socials">
-                    <a href="https://www.instagram.com/" rel="nofollow noopener noreferrer" target="_blank" class="socials__item">
-                        <img src="src/assets/Instagram.svg" alt="instagram" class="socials__item-icon">
+            <div class="footer__left">
+                <p class="footer__copyright">© Kolesa Group</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/" rel="nofollow noopener noreferrer" target="_blank" class="socials__link">
+                        <img src="src/assets/Instagram.svg" alt="instagram" class="socials__icon">
                     </a>
-                    <a href="https://www.youtube.com/" rel="nofollow noopener noreferrer" target="_blank" class="socials__item">
-                        <img src="src/assets/YouTube.svg" alt="youtube" class="socials__item-icon">
+                    <a href="https://www.youtube.com/" rel="nofollow noopener noreferrer" target="_blank" class="socials__link">
+                        <img src="src/assets/YouTube.svg" alt="youtube" class="socials__icon">
                     </a>
-                    <a href="https://www.vk.com/" rel="nofollow noopener noreferrer" target="_blank" class="socials__item">
-                        <img src="src/assets/VK.svg" alt="vkontakte" class="socials__item-icon">
+                    <a href="https://www.vk.com/" rel="nofollow noopener noreferrer" target="_blank" class="socials__link">
+                        <img src="src/assets/VK.svg" alt="vkontakte" class="socials__icon">
                     </a>
                 </div>
             </div>
-            <div class="footer__desc">
-                <p class="footer__desc-item">Есть идеи что улучшить? </p>
-                <p class="footer__desc-item">Не знаешь, с кем решить проблему?</p>
-            </div>
-            <div class="footer__btn">
-                <button type="button" class="footer__button">Написать</button>
+            <div class="footer__right">
+                <div class="footer__desc">
+                    <p class="footer__desc-item">Есть идеи что улучшить? </p>
+                    <p class="footer__desc-item">Не знаешь, с кем решить проблему?</p>
+                </div>
+                <div class="footer__btn">
+                    <button type="button" class="footer__button">Написать</button>
+                </div>
             </div>
         </footer>
     </div>
-    <script src="main.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
 </body>
 
 </html>

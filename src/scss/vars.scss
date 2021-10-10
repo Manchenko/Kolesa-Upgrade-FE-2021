@@ -1,0 +1,17 @@
+$main-color: #1c1819;
+$accent-color: #2a81dd;
+$white-color: #fff;
+$card-label: #64bd38;
+$action-btn: #f33;
+$btn-green: #eff8eb;
+$btn-yellow: #fffae7;
+$btn-blue: #e9f2fb;
+$tabs: #d6ecfb;
+$search: #f2f2f3;
+$shirt-color-blue: #00458a;
+$shirt-color-beige: #efe8d8;
+$shirt-color-grey: #d4d4da;
+
+@mixin br($r) {
+    border-radius: $r;
+}

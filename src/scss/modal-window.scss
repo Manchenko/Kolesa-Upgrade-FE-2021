@@ -1,0 +1,53 @@
+.modal-window-wrap {
+    position: fixed;
+    width: 100%;
+    max-width: 1039px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.modal-wrapper {
+    @include br(16px);
+
+    max-width: 1039px;
+    min-height: 588px;
+    background-color: $white-color;
+    display: flex;
+    position: relative;
+    padding: 64px 56px;
+    justify-content: space-between;
+    align-content: center;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+
+    &__desc {
+        max-width: 573px;
+        width: 100%;
+    }
+
+    &__btn {
+        background: url('../assets/close-big.svg') no-repeat;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        right: 24px;
+        top: 24px;
+    }
+
+    &__blocks:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    &__details {
+        font-size: 14px;
+    }
+
+    &__question {
+        font-size: 14px;
+    }
+}

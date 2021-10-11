@@ -1,0 +1,53 @@
+// aside
+.aside {
+    position: fixed;
+}
+
+.logo {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 36px;
+}
+
+.nav__list {
+    margin-bottom: 26px;
+
+    .nav__link {
+        @include fonts (16px, 24px, 400);
+
+        color: $blackPrimary;
+        position: relative;
+        transition: font-weight 0.5s ease;
+
+        &:hover {
+            font-weight: 600;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -12px;
+            transform: translateY(-50%) scale(0);
+            width: 4px;
+            height: 36px;
+            border-radius: 10px;
+            background-color: $bluePrimary;
+            transition: transform 0.5s ease;
+        }
+
+        &.active {
+            font-weight: 600;
+
+            &::before {
+                transform: translateY(-50%) scale(1);
+            }
+        }
+
+        &:hover::before {
+            transform: translateY(-50%) scale(1);
+            transition: transform 0.5s ease;
+        }
+    }
+}

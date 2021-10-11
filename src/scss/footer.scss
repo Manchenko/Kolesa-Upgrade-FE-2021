@@ -1,0 +1,49 @@
+// footer
+
+.footer {
+    background-color: $blackPrimary;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0 20px 0;
+    }
+}
+
+.copyright {
+    @include fonts (16px, 24px, 400);
+
+    color: $fullWhite;
+}
+
+.socety {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+}
+
+.footer__right {
+    display: flex;
+    align-items: center;
+
+    .footer__text {
+        @include fonts (14px, 24px, 400);
+
+        color: $fullWhite;
+        margin-right: 54px;
+    }
+
+    .footer__btn {
+        @include fonts (14px, 24px, 400);
+
+        background-color: $fullWhite;
+        box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+        padding: 6px 43px;
+    }
+}

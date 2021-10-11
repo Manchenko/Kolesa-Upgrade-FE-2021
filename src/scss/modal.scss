@@ -1,0 +1,208 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__body {
+        max-width: 1039px;
+        width: 100%;
+        background-color: $fullWhite;
+        border-radius: 16px;
+        padding: 56px 56px 64px 56px;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+
+        .modal__images {
+            max-width: 330px;
+            width: 100%;
+            margin-right: 24px;
+
+            & > img {
+                display: block;
+            }
+
+            .modal__preview {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 16px;
+
+                & > img {
+                    border-radius: 8px;
+                    margin: 0 4px 8px 4px;
+                }
+
+                & > img.active {
+                    border: 1px solid $bluePrimary;
+                }
+            }
+        }
+
+        .modal__description {
+            width: 100%;
+
+            .modal__title {
+                @include fonts (20px, 32px, 400);
+
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.modal__sell {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    .modal__score {
+        @include fonts (20px, 32px, 600);
+
+        color: $blackPrimary;
+        margin-bottom: 8px;
+    }
+
+    .btn-primary {
+        @include fonts (14px, 24px, 600);
+
+        color: $fullWhite;
+        background: $bluePrimary;
+        box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+        min-width: 134px;
+        padding: 6px 6px;
+    }
+}
+
+.modal__yourbalance {
+    padding: 8px 79px 8px 16px;
+    background: #f0fafd;
+    border-radius: 16px;
+    position: relative;
+
+    &--balance {
+        @include fonts (14px, 24px, 400);
+
+        color: $textGray;
+        margin-bottom: 4px;
+    }
+
+    &--score {
+        @include fonts (16px, 24px, 400);
+
+        color: $blackPrimary;
+    }
+
+    &--basket {
+        position: absolute;
+        top: 11px;
+        right: 16px;
+    }
+}
+
+.modal__radio--title {
+    @include fonts (14px, 24px, 400);
+
+    color: $blackPrimary;
+    margin-bottom: 8px;
+}
+
+.modal__radio--btns {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+
+    .modal__radio {
+        display: none;
+    }
+
+    .modal__color--label {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 8px 8px 8px 8px;
+        border: 1px #e8e8e8 solid;
+        border-radius: 8px;
+        margin-right: 8px;
+        margin-bottom: 6px;
+        color: $bluePrimary;
+        cursor: pointer;
+
+        & > span {
+            user-select: none;
+
+            @include fonts (14px, 24px, 400);
+        }
+
+        .modal__color--container {
+            width: 23px;
+            height: 24px;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+    }
+}
+
+.modal__radio:checked + .modal__color--label {
+    background-color: #d6ecfb;
+    border: 1px #d6ecfb solid;
+    color: $blackPrimary;
+}
+
+.modal__size--label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 40px;
+    min-height: 40px;
+    border: 1px #e8e8e8 solid;
+    border-radius: 8px;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    padding: 4px;
+    cursor: pointer;
+    color: $bluePrimary;
+
+    & > span {
+        user-select: none;
+
+        @include fonts (14px, 24px, 400);
+    }
+}
+
+.modal__radio:checked + .modal__size--label {
+    background-color: #d6ecfb;
+    border: 1px #d6ecfb solid;
+    color: #000;
+}
+
+.modal__info--title {
+    @include fonts (14px, 24px, 600);
+
+    color: $blackPrimary;
+    margin-bottom: 4px;
+}
+
+.modal__info--text {
+    @include fonts (14px, 24px, 400);
+
+    color: $blackPrimary;
+}
+
+.modal__info--text:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: transparent;
+}

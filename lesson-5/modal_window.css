@@ -1,0 +1,257 @@
+.modal_window_container,
+.closed {
+    visibility: hidden;
+}
+
+.opened {
+    visibility: visible;
+    transition: 0.2s all linear;
+}
+
+.modal_window_container {
+    width: 100%;
+    min-height: 100%;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_window {
+    width: 1040px;
+    padding: 56px;
+    background-color: white;
+    border-radius: 16px;
+    position: relative;
+}
+
+.close_modal_btn {
+    width: 32px;
+    height: 32px;
+    background: url('src/close-big.svg') no-repeat center;
+    border: none;
+    right: 24px;
+    top: 24px;
+    cursor: pointer;
+}
+
+.preview_container {
+    margin-right: 24px;
+}
+
+.selected_product_container {
+    margin-bottom: 16px;
+}
+
+.alternative_product_container {
+    justify-content: center;
+    max-width: 330px;
+}
+
+.preview_image {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+}
+
+.product_container {
+    position: relative;
+    top: 8px;
+}
+
+.title_of_product,
+.current_price {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+
+.title_of_product {
+    font-weight: normal;
+}
+
+.current_price {
+    font-weight: 600;
+}
+
+.order_product_btn {
+    text-decoration: none;
+    color: white;
+    display: block;
+    background-color: #2a81dd;
+    width: 134px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.balance_info_container {
+    justify-content: space-between;
+}
+
+.user_balance_container {
+    background-color: #f0fafd;
+    width: 196px;
+    padding: 8px 16px;
+    border-radius: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_balance {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.user_balance_title {
+    color: #888b94;
+    line-height: 24px;
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+
+.product_info {
+    margin-top: 24px;
+}
+
+.colors_selection_container .info_title,
+.size_selection_container .info_title {
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.detailes_container .info_title,
+.how_to_select_size_container .info_title {
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.modal_window,
+.alternative_product_container,
+.available_colors_container,
+.balance_info_container,
+.available_size_container,
+.user_balance_container,
+.color,
+.size {
+    display: flex;
+}
+
+.color_box {
+    width: 23px;
+    height: 24px;
+    border-radius: 4px;
+    z-index: -2;
+}
+
+.available_colors_container,
+.available_size_container,
+.alternative_product_container {
+    flex-wrap: wrap;
+}
+
+.size_selection,
+.color_selection {
+    border: 1px solid rgba(28, 24, 25, 0.1);
+    background-color: white;
+}
+
+.size_selection,
+.color_selection,
+.preview_image {
+    appearance: none;
+    border-radius: 8px;
+}
+
+.size_selection:checked,
+.color_selection:checked {
+    background-color: #d6ecfb;
+    transition: 0.2s all linear;
+}
+
+.color_selection:checked {
+    border: none;
+}
+
+.size_selection {
+    width: 40px;
+    height: 40px;
+}
+
+.close_modal_btn,
+.color_selection,
+.label_for_size {
+    position: absolute;
+}
+
+.color_selection {
+    width: 100%;
+    height: 100%;
+    background: none;
+    z-index: 0;
+}
+
+.size {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.color,
+.size {
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.color {
+    padding: 8px;
+    margin-right: 8px;
+    position: relative;
+}
+
+.label_for_size,
+.size_name,
+.label_for_color {
+    color: #2a81dd;
+}
+
+.label_for_color {
+    text-indent: 8px;
+}
+
+.preview_image:checked {
+    border: 1px solid #2a81dd;
+}
+
+.color_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type='radio']:checked + .color_info > label,
+input[type='radio']:checked + label {
+    color: black;
+}
+
+input[type='radio']:checked + .color_info {
+    z-index: 1;
+}
+
+.info,
+.info_title {
+    line-height: 24px;
+}
+
+label {
+    user-select: none;
+}

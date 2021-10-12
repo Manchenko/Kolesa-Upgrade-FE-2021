@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="modal_window">
+		<button id="close_modal_btn"></button>
+		<div class="preview_container">
+			<div class="selected_product_container">
+				<img width="330px" src="image 7.png">
+			</div>
+
+			<div class="alternative_product_container">
+				<input style="background: url('🌆 Image1.png');" class="preview_image" type="radio" name="preview_selection" id="image_1_preview">
+				<input checked="" style="background: url('🌆 Image2.png');" class="preview_image" type="radio" name="preview_selection" id="image_2_preview">
+				<input style="background: url('🌆 Image3.png');" class="preview_image" type="radio" name="preview_selection" id="image_3_preview">
+			</div>
+		</div>
+
+		<div class="product_container">
+			<h2 class="title_of_product">Футболка "Эволюционируй или сдохни"</h2>
+			<div class="balance_info_container">
+				<div class="price_container">
+					<h3 class="price">100 баллов</h3>
+					<a class="order_product_btn modal_window_action_btn" href="#">Заказать</a>
+				</div>
+
+				<div class="user_balance_container">
+					<div>
+						<h4 class="user_balance_title">Твой баланс:</h4>
+						<p class="user_balance">3 945 баллов</p>
+					</div>
+
+					<div>
+						<img src="bonus.svg">
+					</div>
+				</div>
+			</div>
+			<div class="product_info_container">
+				<!--Доступная ннформация о продукте-->
+				<div class="colors_selection_container product_info">
+					<h5 class="info_title">Цвета:</h5>
+					<div class="available_colors_container">
+						<div class="color">
+							<input checked="" class="color_selection" type="radio" name="colors" id="color_00458A">
+                            <div class="color_info">
+                                <div class="color_box" style="background: #00458a;"></div>
+                                <label class="label_for_color" for="color_00458A">Синий</label>
+                            </div>
+						</div>
+
+						<div class="color">
+							<input class="color_selection" type="radio" name="colors" id="color_EFE8D8">
+                            <div class="color_info">
+                                <div class="color_box" style="background: #efe8d8;"></div>
+                                <label class="label_for_color" for="color_EFE8D8">Бежевый</label>
+                            </div>
+						</div>
+
+						<div class="color">
+							<input class="color_selection" type="radio" name="colors" id="color_D4D4DA">
+                            <div class="color_info">
+                                <div class="color_box" style="background: #d4d4da;"></div>
+                                <label class="label_for_color"  for="color_D4D4DA">Серый</label>
+                            </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="size_selection_container product_info">
+					<h5 class="info_title">Размер:</h5>
+					<div class="available_size_container">
+						<div class="size">
+							<input checked="" class="size_selection" type="radio" name="sizes" id="size_S">
+							<label class="label_for_size" for="size_S">S</label>
+						</div>
+
+						<div class="size">
+							<input class="size_selection" type="radio" name="sizes" id="size_M">
+							<label class="label_for_size"  for="size_M">M</label>
+						</div>
+
+						<div class="size">
+							<input class="size_selection" type="radio" name="sizes" id="size_L">
+							<label class="label_for_size"  for="size_L">L</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="detailes_container product_info">
+					<h5 class="info_title">Детали:</h5>
+					<p class="info">Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</p>
+				</div>
+
+				<div class="how_to_select_size_container product_info">
+					<h5 class="info_title">Как выбрать размер:</h5>
+					<p class="info">Написать дяде Рику для уточнения.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

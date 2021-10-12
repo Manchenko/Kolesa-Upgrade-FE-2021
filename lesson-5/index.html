@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kolesa Group</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+	<div class="header_container">
+		<img src="src/kolesa_icon.svg" alt="Kolesa Group Logo">
+		<div class="container_1038">
+			<header class="main_header">
+					<div class="searching_box_container">
+						<input type="text" class="searching_box" placeholder="Поиск">
+					</div>
+					<div class="user_info_container">
+							<div class="user_ava_container"></div>
+							<div class="user_balance_info">
+							<p class="username">Мортиджан</p>
+							<p class="user_balance">300 баллов</p>
+						</div>
+					</div>
+			</header>
+		</div>
+	</div>
+
+	<div class="container_1388">
+		<nav class="main_navigation">
+				<ul class="nav_list">
+					<li><a class="nav_list_Link" href="#">Оргсхема</a></li>
+					<li><a class="nav_list_Link" href="#">Kolesa <b>Team</b></a></li>
+					<li><a class="nav_list_Link" href="#"><b>Kolesa Shop</b></a></li>
+					<li><a class="nav_list_Link" href="#">Картина компании</a></li>
+					<li><a class="nav_list_Link" href="#">Новости</a></li>
+					<li><a class="nav_list_Link" href="#">Education</a></li>
+					<li><a class="nav_list_Link" href="#">Guidelines</a></li>
+					<li><a class="nav_list_Link" href="#">Библиотека</a></li>
+					<li><a class="nav_list_Link" href="#">FAQ</a></li>
+				</ul>
+		</nav>
+
+		<div class="container_1038">
+			<main>
+				<section class="main_info">
+					<div class="banner_bg_container">
+						<div class="banner">
+							<div class="banner_info_container">
+								<img width="39px" height="36px" src="src/product_icon.png" alt="иконка пакетов">
+								<h1 class="banner_title">Летняя распродажа -50%</h1>
+								<p class="banner_deadline">Дедлайн: понедельник, 10:00</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="user_actions">
+						<div class="btn_container">
+							<button class="user_action_btn get_bonus_btn"><img src="src/+.png">Получить баллы</button>
+						</div>
+
+						<div class="btn_container">
+							<button class="user_action_btn help_btn"><img src="src/help_icon.png">Как получить баллы</button>
+						</div>
+
+						<div class="btn_container">
+							<button class="user_action_btn give_bonus_btn"><img src="src/gift_Icon.png">Подарить баллы</button>
+						</div>
+					</div>
+				</section>
+			</main>
+
+		<section class="products_container">
+			<div class="product_category_container">
+				<div class="product_category">
+					<input data-id="all_products" checked="" type="radio" class="js__category category" name="categories" id="all_products">
+					<label class="label_for_category" for="all_products">Все товары</label>
+				</div>
+
+				<div class="product_category">
+					<input data-id="clothes" type="radio" class="js__category category" name="categories" id="clothes">
+					<label class="label_for_category" for="clothes">Одежда</label>
+				</div>
+
+				<div class="product_category">
+					<input data-id="accessory" type="radio" class="js__category category" name="categories" id="accessory">
+					<label class="label_for_category" for="accessory">Аксессуары</label>
+				</div>
+			</div>
+
+			<div class="js__product_list product_list">
+			</div>
+	</section>
+	</div>
+</div>
+
+</div>
+<footer class="footer">
+		<div class="container_1388">
+			<div class="kolesa_logo_container">
+				<img src="src/kolesa_logo_footer.svg">
+				<div class="social_media_container">
+					<a href="#" class="social_media"><img src="src/instagram_icon.svg"></a>
+					<a href="#" class="social_media"><img src="src/youtube_icon.svg"></a>
+					<a href="#" class="social_media"><img src="src/vk_icon.svg"></a>
+				</div>
+			</div>
+
+			<div class="question_and_write_container">
+				<div class="questions_container">
+					<a href="#" class="question">Есть идеи что улучшить?</a>
+					<a href="#" class="question">Не знаешь, с кем решить проблему?</a>
+				</div>
+				<a href="#" class="write_btn">Написать</a>
+			</div>
+		</div>
+</footer>
+
+	<div class="modal_window_container">
+		<div class="modal_window">
+			<button class="js__close_btn close_modal_btn"></button>
+			<div class="preview_container">
+				<div class="selected_product_container">
+					<img class="selected_product" width="330px" height="330px" src="">
+				</div>
+
+				<div class="alternative_product_container">
+					<input style="background: url('./src/🌆\ Image1.png');" class="preview_image" type="radio" name="preview_selection" id="image_1_preview">
+					<input checked="" style="background: url('./src/🌆\ Image2.png');" class="preview_image" type="radio" name="preview_selection" id="image_2_preview">
+					<input style="background: url('./src/🌆\ Image3.png');" class="preview_image" type="radio" name="preview_selection" id="image_3_preview">
+				</div>
+			</div>
+
+			<div class="product_container">
+				<h2 class="title_of_product">title</h2>
+				<div class="balance_info_container">
+					<div class="price_container">
+						<h3 class="current_price">100 баллов</h3>
+						<a class="order_product_btn modal_window_action_btn" href="#">Заказать</a>
+					</div>
+
+					<div class="user_balance_container">
+						<div>
+							<h4 class="user_balance_title">Твой баланс:</h4>
+							<p class="user_balance">3 945 баллов</p>
+						</div>
+
+						<div>
+							<img src="src/bonus.svg">
+						</div>
+					</div>
+				</div>
+				<div class="product_info_container">
+					<div class="colors_selection_container product_info">
+						<h5 class="info_title">Цвета:</h5>
+						<div class="available_colors_container">
+							<div class="color">
+								<input checked="" class="color_selection" type="radio" name="colors" id="color_00458A">
+								<div class="color_info">
+									<div class="color_box" style="background: #00458a;"></div>
+									<label class="label_for_color" for="color_00458A">Синий</label>
+								</div>
+							</div>
+
+							<div class="color">
+								<input class="color_selection" type="radio" name="colors" id="color_EFE8D8">
+								<div class="color_info">
+									<div class="color_box" style="background: #efe8d8;"></div>
+									<label class="label_for_color" for="color_EFE8D8">Бежевый</label>
+								</div>
+							</div>
+
+							<div class="color">
+								<input class="color_selection" type="radio" name="colors" id="color_D4D4DA">
+								<div class="color_info">
+									<div class="color_box" style="background: #d4d4da;"></div>
+									<label class="label_for_color"  for="color_D4D4DA">Серый</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="size_selection_container product_info">
+						<h5 class="info_title">Размер:</h5>
+						<div class="available_size_container">
+							<div class="size">
+								<input checked="" class="size_selection" type="radio" name="sizes" id="size_S">
+								<label class="label_for_size" for="size_S">S</label>
+							</div>
+
+							<div class="size">
+								<input class="size_selection" type="radio" name="sizes" id="size_M">
+								<label class="label_for_size"  for="size_M">M</label>
+							</div>
+
+							<div class="size">
+								<input class="size_selection" type="radio" name="sizes" id="size_L">
+								<label class="label_for_size"  for="size_L">L</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="detailes_container product_info">
+						<h5 class="info_title">Детали:</h5>
+						<p class="info">Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</p>
+					</div>
+
+					<div class="how_to_select_size_container product_info">
+						<h5 class="info_title">Как выбрать размер:</h5>
+						<p class="info">Написать дяде Рику для уточнения.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>

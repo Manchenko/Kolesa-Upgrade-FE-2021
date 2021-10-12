@@ -15,7 +15,6 @@ btn.addEventListener('click', () => {
 // cards
 
 const all = clothes.concat(accessories);
-
 const makeProductCard = (img, alt, title, price, badge, size, id) => ` <div data-id="${id}" class="content__product" >
         <div class="card">
             <div class="card__image">

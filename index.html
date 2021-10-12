@@ -1,13 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ru">
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+    <link rel="stylesheet" href="./src/scss/main.scss">
+    <title>Kolesa</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container container__inner">
+                <aside class="aside">
+                    <nav class="nav">
+                        <a href="#"><img class="logo" src="/src/assets/IMG/Kolesa group.svg" alt="логотип"></a>
+                        <ul class="nav__menu">
+                            <li class="nav__list">
+                                <a class="nav__link" href="#">
+                                    Оргсхема
+                                </a>
+                            </li>
+                            <li class="nav__list">
+                                <a class="nav__link" href="#">
+                                    Kolesa Team
+                                </a>
+                            </li>
+                            <li class="nav__list">
+                                <a class="nav__link active" href="#">
+                                    Kolesa Shop
+                                </a>
+                            </li>
+                            <li class="nav__list">
+                                <a class="nav__link" href="#">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="nav__list">
+                                <a class="nav__link" href="#">
+                                    Education
+                                </a>
+                            </li>
+                            <li class="nav__list">
+                                <a class="nav__link" href="#">
+                                    Guidelines
+                                </a>
+                            </li>
+                            <li class="nav__list">
+                                <a class="nav__link" href="#">
+                                    Библиотека
+                                </a>
+                            </li>
+                            <li class="nav__list">
+                                <a class="nav__link" href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <section class="main-content main-content__left">
+                    <div class="main-content__header">
+                        <div class="search">
+                            <button class="search__button" type="button">
+                                <img src="/src/assets/IMG/search-big.svg" alt="">
+                            </button>
+                            <input class="search__input" type="text" placeholder="Поиск">
+                        </div>
+                        <a class="user">
+                            <div class="user__avatar">
+                                <img
+                                    src="src/assets/IMG/avatar.jpg"
+                                    alt="Аватар ползовательля"
+                                    width="44"
+                                    height="44"
+                                >
+                            </div>
+                            <div class="user__info">
+                                <span class="user__name">Мортиджан</span>
+                                <span class="user__point">300 баллов</span>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="banner" href="#">
+                        <img src="/src/assets/IMG/Баннер.jpg" alt="баннер">
+                    </a>
+                    <div class="point-btns">
+                        <a class="point-btns__item" style="background-color: #eff8eb;">
+                            <img class="point-btns__img" src="/src/assets/IMG/plus.png" alt="Знак плюс">
+                            <span class="point-btns__text">Получить баллы</span>
+                        </a>
+                        <a class="point-btns__item" style="background-color: #e9f2fb;">
+                            <img class="point-btns__img" src="/src/assets/IMG/question.png" alt="Вопросительный знак">
+                            <span class="point-btns__text">Как получить баллы</span>
+                        </a>
+                        <a class="point-btns__item" style="background-color: #fffae7;">
+                            <img class="point-btns__img" src="/src/assets/IMG/sbox.png" alt=" Знак подарка">
+                            <span class="point-btns__text">Подарить баллы</span>
+                        </a>
+                    </div>
+                    <div class="tabs-btns">
+                        <button data-key="all" class="js__tabs-btns tabs-btns__item active" type="button">
+                            Все товары
+                        </button>
+                        <button data-key="clothes" class="js__tabs-btns tabs-btns__item" type="button">
+                            Одежда
+                        </button>
+                        <button data-key="accesories" class="js__tabs-btns tabs-btns__item" type="button">
+                            Аксессуары
+                        </button>
+                    </div>
+                    <div class="main-cards js-cards">
+
+                    </div>
+                </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <p class="copyright">© Kolesa Group</p>
+                        <ul class="socety">
+                            <li class="socety__item">
+                                <a href="#">
+                                    <img src="/src/assets/IMG/Instagram.svg" alt="инстагарм">
+                                </a>
+                            </li>
+                            <li class="socety__item">
+                                <a href="#">
+                                    <img src="/src/assets/IMG/YouTube.svg" alt="ютуб">
+                                </a>
+                            </li>
+                            <li class="socety__item">
+                                <a href="#">
+                                    <img src="/src/assets/IMG/VK.svg" alt="вконтакте">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__right">
+                        <p class="footer__text">Есть идеи что улучшить? <br> Не знаешь, с кем решить проблему?</p>
+                        <button class="footer__btn" type="button">
+                            Написать
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal">
+            <!-- Modal -->
+            <div class="modal__body">
+                <div class="modal__images">
+                    <img src="src/assets/IMG/t-shirt.jpg" alt="Классная футболка! Эволюционируй или сдохни">
+                    <div class="modal__preview">
+                        <img src="/src/assets/IMG/preview-1.jpg" alt="Классная футболка! Эволюционируй или сдохни"
+                            width="50" height="50">
+                        <img class="active" src="/src/assets/IMG/preview-2.jpg"
+                            alt="Классная футболка! Эволюционируй или сдохни" width="50" height="50">
+                        <img src="/src/assets/IMG/preview-3.jpg" alt="Классная футболка! Эволюционируй или сдохни"
+                            width="50" height="50">
+                    </div>
+                </div>
+                <div class="modal__description">
+                    <h1 class="modal__title">Футболка "Эволюционируй или сдохни"</h1>
+                    <form class="modal__form" action="#" method="GET">
+                        <div class="modal__sell">
+                            <div class="modal__scores">
+                                <h6 class="modal__score">100 баллов</h6>
+                                <button class="btn-primary" type="submit">Заказать</button>
+                            </div>
+                            <div class="modal__yourbalance">
+                                <p class="modal__yourbalance--balance">Твой баланс:</p>
+                                <p class="modal__yourbalance--score">3 945 баллов</p>
+                                <img class="modal__yourbalance--basket" src="/src/assets/IMG/basket.png" alt="Корзина">
+                            </div>
+                        </div>
+                        <div class="modal__radio--colors">
+                            <h6 class="modal__radio--title">Цвета:</h6>
+                            <div class="modal__radio--btns">
+                                <input class="modal__radio" type="radio" name="modal__color" id="modal__color--blue"
+                                    value="#00458A">
+                                <label class="modal__color--label" for="modal__color--blue">
+                                    <div class="modal__color--container" style="background-color: #00458a;"></div>
+                                    <span>Синий</span>
+                                </label>
+                                <input class="modal__radio" type="radio" name="modal__color" id="modal__color--beige"
+                                    value="#EFE8D8">
+                                <label class="modal__color--label" for="modal__color--beige">
+                                    <div class="modal__color--container" style="background-color: #efe8d8;"></div>
+                                    <span>Бежевый</span>
+                                </label>
+                                <input class="modal__radio" type="radio" name="modal__color" id="modal__color--gray"
+                                    value="#D4D4DA">
+                                <label class="modal__color--label" for="modal__color--gray">
+                                    <div class="modal__color--container" style="background-color: #d4d4da;"></div>
+                                    <span>Серый</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal__radio--size">
+                            <h6 class="modal__radio--title">Размер:</h6>
+                            <div class="modal__radio--btns">
+                                <input class="modal__radio" type="radio" name="modal__size" id="modal__size--s"
+                                    value="s">
+                                <label class="modal__size--label" for="modal__size--s">
+                                    <span>S</span>
+                                </label>
+                                <input class="modal__radio" type="radio" name="modal__size" id="modal__size--m"
+                                    value="m">
+                                <label class="modal__size--label" for="modal__size--m">
+                                    <span>M</span>
+                                </label>
+                                <input class="modal__radio" type="radio" name="modal__size" id="modal__size--l"
+                                    value="l">
+                                <label class="modal__size--label" for="modal__size--l">
+                                    <span>L</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal__info">
+                            <h6 class="modal__info--title">Детали:</h6>
+                            <p class="modal__info--text">Брендированная толстовка от Qazaq Republic. Материал: Хлопок
+                                80%,
+                                Вискоза 20%</p>
+                            <h6 class="modal__info--title">Как выбрать размер:</h6>
+                            <p class="modal__info--text">Написать дяде Рику для уточнения.</p>
+                        </div>
+                        <button class="modal__close" type="button">
+                            <img src="./src/assets/IMG/close.svg" alt="Знак икс">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div><!-- /Modal -->
+    </div>
+    <script src="./src/js/main.js"></script>
+</body>
+
 </html>

@@ -1,5 +1,13 @@
-import '../css/style.css';
+const modalClose = document.querySelector('.modal__close');
+const modal = document.querySelector('.hidden');
+const productCard = document.querySelector(".main-card");
+modalClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello, Kolesa Upgrade!</h1>
-`;
+
+document.querySelectorAll('.main-card').forEach(item => {
+    item.addEventListener('click', event => {
+        modal.style.display = 'block';
+    })
+})

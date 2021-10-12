@@ -1,13 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style/css/style.css">
+    <link rel="stylesheet" href="src/style/css/style.css">
     <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+</head>
+
+<body id="app">
+    <header class="header app-header">
+        <div class="header-logo-and-search">
+            <div class="header-logo">
+                <img src="src/assets/Vector.png" alt="logo">
+            </div>
+            <div class="header-search">
+                <i class="header-icon"><img src="src/assets/search.svg" alt=""></i>
+                <input type="text" placeholder="Поиск">
+            </div>
+        </div>
+        <div class="header-user">
+            <div class="header-user__avatar">
+                <img src="src/assets/user.png" alt="user-avatar">
+            </div>
+            <div class="header-user__info">
+                <span class="header-user__name">Мортиджан</span>
+                <span class="header-user__points">300 баллов</span>
+            </div>
+        </div>
+    </header>
+    <div class="main app-main">
+        <aside>
+            <nav class="main-nav nav">
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a href="#">Оргсхема</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="# ">Kolesa <span class="bold ">Team</span></a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="#">Kolesa Shop</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="# ">Картина компании</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="#">Новости</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="# ">Education</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="#">Guidelines</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="# ">Библиотека</a>
+                    </li>
+                    <li class="main-menu__item ">
+                        <a href="#">FAQ</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </aside>
+        <div class="main-cards main__content">
+            <div class="main-promo">
+                <div class="main-img__promo">
+                    <img src="src/assets/Rectangle 54 (1).png" alt="promo" width="1038" height="335" class=" main-img__promoimgs promo-img main__banner">
+                    <img src="src/assets/rucksuck.svg" alt="" class="first-img main-img__promoimgs">
+                    <img src="src/assets/coat.svg" alt="кофта черная" class="second-img main-img__promoimgs">
+                    <img src="src/assets/4 1.svg" alt="кофта серая" class="third-img main-img__promoimgs">
+                    <img src="src/assets/4 2.png" alt="кофта серая" class="fourth-img main-img__promoimgs">
+                    <img src="src/assets/bagruck.svg" alt="рюкзак" class="fifth-img main-img__promoimgs" width="285" height="287">
+                    <img src="src/assets/bag.svg" alt="bag" width="39" height="36" class="bag-img main-img__promoimgs">
+                </div>
+                <div class="main-sale">
+                    <h2 class="main-promo__text">Летняя распродажа -50%</h2>
+                    <span class="main-deadline">Дедлайн: понедельник, 10:00</span>
+                </div>
+            </div>
+
+            <div class="main-grades main__buttons">
+                <div class="main-grade">
+                    <img src="src/assets/➕.svg" alt=""> Получить баллы
+                </div>
+                <div class="main-grade">
+                    <img src="src/assets/❓.svg" alt=""> Как получить баллы
+                </div>
+                <div class="main-grade">
+                    <img src="src/assets/🎁.svg" alt=""> Подарить баллы
+                </div>
+            </div>
+
+            <div class="main-sorting__btns main__blockRadio">
+                <button class="all-products main-sorting-btn">
+                    Все товары
+                </button>
+                <button class="clothes main-sorting-btn">
+                    Одежда
+                </button>
+                <button class="access main-sorting-btn">
+                    Аксессуары
+                </button>
+            </div>
+
+            <div class="main-products">
+                <div class="main-card">
+                    <div class="main-image__block">
+                        <img class="main-image" alt="Футболка Эволюцианируй или сдохни " src="src/assets/image 4.png" width="330" height="330">
+                        <span class="badge">new</span>
+                    </div>
+                    <div class="main-image__description ">
+                        <div class="main-price ">
+                            220 баллов
+                        </div>
+                        <h3 class="main-image__title ">
+                            Футболка "Эволюцианируй или сдохни "
+                        </h3>
+                        <div class="main-image__hint ">
+                            Размеры S/M/L
+                        </div>
+                        <button class="main-image__button " type="button ">
+                    Заказать
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-block block1">
+            <div class="footer-company-name">© Kolesa Group</div>
+            <div class="footer-icons">
+                <a href="#" class="footer-icon"><img src="src/assets/insta-icon.svg" alt=""></a>
+                <a href="#" class="footer-icon"><img src="src/assets/youtube.svg" alt=""></a>
+                <a href="#" class="footer-icon"><img src="src/assets/vk.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="footer-block2 block">
+            <div class="footer-info">
+                <span class="offers">Есть идеи что улучшить? <br>Не знаешь, с кем решить проблему? </span>
+            </div>
+            <div class="footer-writeus">
+                <button class="footer-write__button">Написать</button>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-container hidden modal-1">
+        <div class="modal d-flex">
+            <button class="modal__close" type="button">
+            <img src="src/assets/close-icon.svg" width="17" height="17" alt="close icon" >
+          </button>
+            <div class="modal__left-side">
+                <div class="modal__left-side__media-block">
+                    <img src="src/assets/image 7.png" class="modal__left-side__media-block__product-img" alt="Футболка Эволюционируй или сдохни" width="100%">
+                    <div class="slide-block d-flex">
+                        <img src="src/assets/img-1.png" class="slide-item active" alt=" Футболка Эволюционируй или сдохни серый" width="50" height="50">
+                        <img src="src/assets/img-1.png" class="slide-item " alt=" Футболка Эволюционируй или сдохни серый" width="50" height="50">
+                        <img src="src/assets/img-1.png" class="slide-item " alt=" Футболка Эволюционируй или сдохни серый" width="50" height="50">
+                        <img src="src/assets/img-1.png" class="slide-item " alt=" Футболка Эволюционируй или сдохни серый" width="50" height="50">
+                        <img src="src/assets/img-1.png" class="slide-item " alt=" Футболка Эволюционируй или сдохни серый" width="50" height="50">
+                        <img src="src/assets/img-2.png" class="slide-item " alt=" Футболка Эволюционируй или сдохни серый" width="50" height="50">
+                        <img src="src/assets/img-1.png" class="slide-item " alt=" Футболка Эволюционируй или сдохни серый" width="50" height="50">
+                        <img src="src/assets/img-2.png" class="slide-item " alt=" Футболка Эволюционируй или сдохни серый" width="50" height="50">
+                        <img src="src/assets/img-1.png" class="slide-item " alt=" Футболка Эволюционируй или сдохни серый" width="50" height="50">
+                        <img src="src/assets/img-2.png" class="slide-item " alt=" Футболка Эволюционируй или сдохни серый" width="50" height="50">
+                    </div>
+                </div>
+            </div>
+            <div class="modal__right-side">
+                <div class="modal__right-side__title">
+                    <h2 class="title-1 mb-8 fw-4">
+                        Футболка "Эволюционируй или сдохни"
+                    </h2>
+                </div>
+                <div class="action-block d-flex mb-24">
+                    <div>
+                        <h2 class="title-1 action-block__cost mb-8 fw-6">
+                            100 баллов
+                        </h2>
+                        <button class="btn primary-btn" type="button">
+                  Заказать
+                </button>
+                    </div>
+                    <div>
+                        <div class="badge badge-2">
+                            <div class="d-flex balance">
+                                <div>
+                                    <p class="balance__label">Твой баланс:</p>
+                                    <span class="balance__count">
+                        3 945 баллов
+                      </span>
+                                </div>
+                                <img src="src/assets/cartt.svg" width="40" alt="Иконка пакетов" class="balance__icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-variant">
+                    <div class="product-variant__color mb-24">
+                        <h4 class="title-3 mb-8 fw-4">
+                            Цвета:
+                        </h4>
+                        <div class="product-variant__color__variants">
+                            <input class="custom-radio" type="radio" id="colorChoice1" name="contact" value="blue">
+                            <label class="radio-choice-btn" for="colorChoice1">
+                    <div class="radio-choice-btn__color mr-8" style="background:#00458A">
+                    </div>
+                    <span class="radio-choice-btn__text">Синий</span>
+                  </label>
+                            <input class="custom-radio" type="radio" id="colorChoice2" name="contact" value="dimgray">
+                            <label class="radio-choice-btn" for="colorChoice2">
+                    <div class="radio-choice-btn__color mr-8" style="background:#EFE8D8">
+                    </div>
+                    <span class="radio-choice-btn__text">Бежевый</span>
+                  </label>
+                            <input class="custom-radio" type="radio" id="colorChoice3" name="contact" value="gray">
+                            <label class="radio-choice-btn" for="colorChoice3">
+                    <div class="radio-choice-btn__color mr-8" style="background:#D4D4DA">
+                    </div>
+                    <span class="radio-choice-btn__text">Серый</span>
+                  </label>
+                        </div>
+                    </div>
+                    <div class="product-variant__color mb-24">
+                        <h4 class="title-3 mb-8 fw-4">
+                            Размер:
+                        </h4>
+                        <div class="product-variant__color__variants size-list">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-detail">
+                    <div class="info-block">
+                        <h4 class="info-block__title title-3">
+                            Детали:
+                        </h4>
+                        <p class="info-block__description detail">
+                            Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%
+                        </p>
+                    </div>
+                    <div class="info-block">
+                        <h4 class="info-block__title title-3">
+                            Как выбрать размер:
+                        </h4>
+                        <p class="info-block__description">
+                            Написать дяде Рику для уточнения.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/js/main.js"></script>
+</body>
+
 </html>

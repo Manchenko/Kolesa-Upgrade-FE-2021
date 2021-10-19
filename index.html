@@ -82,9 +82,11 @@
             </aside>
             <section class="content">
                 <div class="content__image image">
-                    <img srcset="src/assets/banner-mob2.jpg 360w, src/assets/banner.jpg 800w"
-                    sizes="(max-width: 500px) 360px, 800px"
-                    src="src/assets/banner.jpg" class="image__item">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="src/assets/banner-mob2.jpg">
+                        <source media="(min-width: 768px)" srcset="src/assets/banner.jpg">
+                        <img src="src/assets/banner.jpg" class="image__item" alt="Горячее предложение">
+                    </picture>
                 </div>
                 <div class="content__questions questions">
                     <button type="button" class="questions__item questions__item--take">Получить баллы</button>
@@ -92,109 +94,11 @@
                     <button type="button" class="questions__item questions__item--present">Подарить баллы</button>
                 </div>
                 <div class="content__tabs tabs">
-                    <button type="button" class="tabs__item active">Все товары</button>
-                    <button type="button" class="tabs__item">Одежда</button>
-                    <button type="button" class="tabs__item">Аксессуары</button>
+                    <button data-type="all" type="button" class="js-tabs-btn tabs__item tabs__item--active">Все товары</button>
+                    <button data-type="clothes" type="button" class="js-tabs-btn tabs__item">Одежда</button>
+                    <button data-type="accessories" type="button" class="js-tabs-btn tabs__item">Аксессуары</button>
                 </div>
-                <div class="content__products">
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-wrap">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="src/assets/image04.jpg" alt="Футболка Эволюционируй или сдохни">
-                                <span class="card__label">New</span>
-                            </div>
-                            <div class="card__desc">
-                                <h3 class="card__ball">220 баллов</h3>
-                                <h4 class="card__name">Футболка "Эволюционируй или сдохни"</h4>
-                                <p class="card__sizes">Размеры S/M/L </p>
-                                <button type="button" class="card__btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="js-products">
                 </div>
             </section>
         </main>
@@ -223,6 +127,70 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-main-wrap">
+            <div class="modal-overlay"></div>
+            <div class="modal-window-wrap" id="modal-window-wrap">
+                <div class="modal-wrapper">
+                    <button type="button" class="modal-wrapper__btn"></button>
+                    <div class="images">
+                        <img src="src/assets/image.png" alt="Футболка Эволюционируй или сдохни" class="images__elem">
+                        <div class="images__items">
+                            <img src="src/assets/image-1.png" alt="Футболка Эволюционируй или сдохни 01" class="images__item">
+                            <img src="src/assets/image-2.png" alt="Футболка Эволюционируй или сдохни 02" class="images__item active">
+                            <img src="src/assets/image-3.png" alt="Футболка Эволюционируй или сдохни 03" class="images__item">
+                        </div>
+                    </div>
+                    <div class="modal-wrapper__desc">
+                        <h3 class="modal-wrapper__title">Футболка "Эволюционируй или сдохни"</h3>
+                        <div class="modal-wrapper__blocks scores">
+                            <div class="scores__left">
+                                <h4 class="scores__left-title">100 баллов</h4>
+                                <button type="button" class="scores__btn">Попросить 50 баллов</button>
+                            </div>
+                            <div class="scores__right">
+                                <p class="scores__title">Твой баланс:</p>
+                                <p class="scores__text">50 баллов</p>
+                            </div>
+                        </div>
+                        <div class="modal-wrapper__blocks colors">
+                            <h5 class="colors__title">Цвета:</h5>
+                            <div class="colors__items">
+                                <input type="radio" class="colors__item" id="radio-1" name="colors">
+                                <label for="radio-1" class="colors__label colors__blue">Синий</label>
+
+                                <input type="radio" class="colors__item" id="radio-2" name="colors">
+                                <label for="radio-2" class="colors__label colors__beige">Бежевый</label>
+
+                                <input type="radio" class="colors__item" id="radio-3" name="colors">
+                                <label for="radio-3" class="colors__label colors__grey">Серый</label>
+                            </div>
+                        </div>
+                        <div class="modal-wrapper__blocks size">
+                            <h5 class="size__title">Размер:</h5>
+                            <div class="size__items">
+                                <input type="radio" class="size__input" id="size-1" name="size">
+                                <label for="size-1" class="size__label">S</label>
+
+                                <input type="radio" class="size__input" id="size-2" name="size">
+                                <label for="size-2" class="size__label">M</label>
+
+                                <input type="radio" class="size__input" id="size-3" name="size">
+                                <label for="size-3" class="size__label">L</label>
+                            </div>
+                        </div>
+                        <div class="modal-wrapper__blocks">
+                            <h5 class="modal-wrapper__details">Детали:</h5>
+                            <p>Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</p>
+                        </div>
+                        <div class="modal-wrapper__blocks">
+                            <h5 class="modal-wrapper__question">Как выбрать размер:</h5>
+                            <p>Написать дяде Рику для уточнения.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <script type="module" src="/src/js/main.js"></script>
 </body>

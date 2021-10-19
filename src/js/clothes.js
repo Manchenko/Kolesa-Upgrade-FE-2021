@@ -1,0 +1,58 @@
+const clothes = [
+    {
+        id:    0,
+        img:   'src/assets/image04.jpg',
+        alt:   'Футболка "Эволюционируй или сдохни"',
+        title: 'Футболка "Эволюционируй или сдохни"',
+        price: 220,
+        badge: true,
+        size:  'S/M/L',
+    },
+    {
+        id:    1,
+        img:   'src/assets/image11.jpg',
+        alt:   'Футболка "Все очень круто, но надо переделать"',
+        title: 'Футболка "Все очень круто, но надо переделать"',
+        price: 200,
+        badge: true,
+        size:  'S/M/L',
+    },
+    {
+        id:    5,
+        img:   'src/assets/image12.jpg',
+        alt:   'Толстовка "Kolesa Team"',
+        title: 'Толстовка "Kolesa Team"',
+        price: 500,
+        badge: false,
+        size:  'S/M/L',
+    },
+    {
+        id:    6,
+        img:   'src/assets/image13.jpg',
+        alt:   'Толстовка "Kolesa Team"',
+        title: 'Толстовка "Kolesa Team"',
+        price: 510,
+        badge: false,
+        size:  'S/M/L',
+    },
+    {
+        id:    7,
+        img:   'src/assets/image14.jpg',
+        alt:   'Толстовка "Kolesa Team"',
+        title: 'Толстовка "Kolesa Team"',
+        price: 520,
+        badge: false,
+        size:  'S/M/L',
+    },
+    {
+        id:    8,
+        img:   'src/assets/image17.png',
+        alt:   'Толстовка "Kolesa Team"',
+        title: 'Толстовка "Kolesa Team"',
+        price: 525,
+        badge: false,
+        size:  'S/M/L',
+    },
+];
+
+export default clothes;

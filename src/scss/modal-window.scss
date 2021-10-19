@@ -1,5 +1,27 @@
+.modal-main-wrap {
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $main-color;
+    opacity: 0.6;
+    z-index: 30;
+}
+
 .modal-window-wrap {
     position: fixed;
+    z-index: 50;
     width: 100%;
     max-width: 1039px;
     top: 50%;

@@ -1,0 +1,19 @@
+.images {
+    max-width: 330px;
+
+    &__items {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin: 4px;
+        border-radius: 8px;
+
+        &.active {
+            border: 1px solid $accent-color;
+        }
+    }
+}

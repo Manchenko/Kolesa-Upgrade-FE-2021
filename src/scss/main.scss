@@ -1,0 +1,125 @@
+.content {
+    grid-column: 3 / 4;
+
+    &__image {
+        margin-bottom: 20px;
+    }
+
+    &__questions {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.image {
+    &__item {
+        width: 100%;
+    }
+}
+
+.content__products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 24px;
+}
+
+.products {
+    .card {
+        max-width: 330px;
+        width: 100%;
+        min-height: 474px;
+        position: relative;
+
+        &-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            max-width: 330px;
+            border-radius: 8px;
+            transition: box-shadow ease 0.5s;
+
+            &:hover {
+                box-shadow: 0 2px 10px rgba(28, 24, 25, 0.1);
+                z-index: 2;
+
+                & .products__ball {
+                    color: $action-btn;
+                }
+
+                & .products__btn {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__image {
+        position: relative;
+
+        & img {
+            border-radius: 8px;
+            width: 100%;
+        }
+    }
+
+    &__label {
+        @include br(4px);
+
+        position: absolute;
+        background: $card-label;
+        padding: 0 4px;
+        text-transform: uppercase;
+        color: $white-color;
+        font-size: 13px;
+        left: 16px;
+        bottom: 16px;
+    }
+
+    &__desc {
+        padding: 16px;
+        max-width: 330px;
+    }
+
+    &__ball {
+        font-size: 24px;
+        font-weight: 600;
+        color: $accent-color;
+        margin-bottom: 12px;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 16px;
+        color: $main-color;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__sizes {
+        margin: 4px 0 16px;
+    }
+
+    &__btn {
+        @include br(8px);
+
+        max-width: 298px;
+        width: 100%;
+        padding: 12px;
+        background: $accent-color;
+        color: $white-color;
+        font-size: 16px;
+        display: none;
+        border: 1px solid $white-color;
+        box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+        transition: background ease 0.5s;
+
+        &:hover {
+            border: 1px solid $accent-color;
+            background: transparent;
+            color: $accent-color;
+        }
+    }
+}

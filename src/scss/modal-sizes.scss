@@ -1,0 +1,35 @@
+.size {
+    &__items {
+        display: flex;
+        margin-top: 8px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    &__input {
+        -webkit-appearance: none;
+        appearance: none;
+        opacity: 0;
+
+        &:checked + .size__label {
+            background-color: $tabs;
+            border: 1px solid $tabs;
+            color: $main-color;
+        }
+    }
+
+    &__label {
+        @include br(8px);
+
+        top: 0;
+        left: 0;
+        padding: 8px 14px;
+        text-align: center;
+        color: $accent-color;
+        border: 1px solid rgba(28, 24, 25, 0.1);
+        margin-right: 8px;
+    }
+}

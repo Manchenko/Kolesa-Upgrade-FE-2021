@@ -1,0 +1,58 @@
+const accessories = [
+    {
+        id:    11,
+        img:   'src/assets/image07.jpg',
+        alt:   'Бутылка для воды',
+        title: 'Бутылка для воды',
+        price: 150,
+        badge: false,
+        size:  'M',
+    },
+    {
+        id:    13,
+        img:   'src/assets/image15.jpg',
+        alt:   'Рюкзак "Kolesa Team"',
+        title: 'Рюкзак "Kolesa Team"',
+        price: 400,
+        badge: true,
+        size:  'S/M/L',
+    },
+    {
+        id:    14,
+        img:   'src/assets/image16.jpg',
+        alt:   'Рюкзак "Kolesa Team"',
+        title: 'Рюкзак "Kolesa Team"',
+        price: 390,
+        badge: true,
+        size:  'S/M/L',
+    },
+    {
+        id:    15,
+        img:   'src/assets/image08.jpg',
+        alt:   'Термо-кружка "Kolesa Team"',
+        title: 'Термо-кружка "Kolesa Team"',
+        price: 380,
+        badge: false,
+        size:  'S/M/L',
+    },
+    {
+        id:    16,
+        img:   'src/assets/image09.jpg',
+        alt:   'Вязанная шапка "Kolesa Team"',
+        title: 'Вязанная шапка "Kolesa Team"',
+        price: 230,
+        badge: false,
+        size:  'S/M/L',
+    },
+    {
+        id:    17,
+        img:   'src/assets/image20.jpg',
+        alt:   'Солнцезащитные очки',
+        title: 'Солнцезащитные очки',
+        price: 100,
+        badge: false,
+        size:  'S/M/L',
+    },
+];
+
+export default accessories;

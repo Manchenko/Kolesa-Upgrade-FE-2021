@@ -1,0 +1,33 @@
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template: 1fr / 1fr minmax(auto, 281px) minmax(auto, 1038px) 1fr;
+    padding: 32px 24px 24px;
+    align-items: center;
+
+    &__logo {
+        display: none;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: end;
+
+        &-account {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        &__logo {
+            grid-column: 2 / 3;
+            display: block;
+        }
+
+        &__right {
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Модалка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+  </head>
+  <body>
+    <div id="app">
+        <div class="modal-window-wrap" id="modal-window-wrap">
+            <div class="modal-wrapper">
+                <button type="button" class="modal-wrapper__btn"></button>
+                <div class="images">
+                    <img src="src/assets/image.png" alt="Футболка Эволюционируй или сдохни">
+                    <div class="images__items">
+                        <img src="src/assets/image-1.png" alt="Футболка Эволюционируй или сдохни 01" class="images__item">
+                        <img src="src/assets/image-2.png" alt="Футболка Эволюционируй или сдохни 02" class="images__item active">
+                        <img src="src/assets/image-3.png" alt="Футболка Эволюционируй или сдохни 03" class="images__item">
+                    </div>
+                </div>
+                <div class="modal-wrapper__desc">
+                    <h3 class="modal-wrapper__title">Футболка "Эволюционируй или сдохни"</h3>
+                    <div class="modal-wrapper__blocks scores">
+                        <div class="scores__left">
+                            <h4 class="scores__left-title">100 баллов</h4>
+                            <button type="button" class="scores__btn">Попросить 50 баллов</button>
+                        </div>
+                        <div class="scores__right">
+                            <p class="scores__title">Твой баланс:</p>
+                            <p class="scores__text">50 баллов</p>
+                        </div>
+                    </div>
+                    <div class="modal-wrapper__blocks colors">
+                        <h5 class="colors__title">Цвета:</h5>
+                        <div class="colors__items">
+                            <input type="radio" class="colors__item" id="radio-1" name="colors">
+                            <label for="radio-1" class="colors__label colors__blue">Синий</label>
+
+                            <input type="radio" class="colors__item" id="radio-2" name="colors">
+                            <label for="radio-2" class="colors__label colors__beige">Бежевый</label>
+
+                            <input type="radio" class="colors__item" id="radio-3" name="colors">
+                            <label for="radio-3" class="colors__label colors__grey">Серый</label>
+                        </div>
+                    </div>
+                    <div class="modal-wrapper__blocks size">
+                        <h5 class="size__title">Размер:</h5>
+                        <div class="size__items">
+                            <input type="radio" class="size__input" id="size-1" name="size">
+                            <label for="size-1" class="size__label">S</label>
+
+                            <input type="radio" class="size__input" id="size-2" name="size">
+                            <label for="size-2" class="size__label">M</label>
+
+                            <input type="radio" class="size__input" id="size-3" name="size">
+                            <label for="size-3" class="size__label">L</label>
+                        </div>
+                    </div>
+                    <div class="modal-wrapper__blocks">
+                        <h5 class="modal-wrapper__details">Детали:</h5>
+                        <p>Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</p>
+                    </div>
+                    <div class="modal-wrapper__blocks">
+                        <h5 class="modal-wrapper__question">Как выбрать размер:</h5>
+                        <p>Написать дяде Рику для уточнения.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
